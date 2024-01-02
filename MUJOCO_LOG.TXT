@@ -1,0 +1,30 @@
+Sun Sep 10 16:40:45 2023
+WARNING: mju_openResource: unknown file '../../assets/turtlebot/turtle.xml'
+
+Sun Sep 10 16:41:54 2023
+WARNING: mju_openResource: unknown file '../../assets/unitree_mujoco/data/a1/xml/a1.xml'
+
+Sun Sep 10 16:42:06 2023
+WARNING: mju_openResource: unknown file '../../assets/unitree_mujoco/data/a1/xml/a1.xml'
+
+Wed Nov  1 17:15:00 2023
+WARNING: Pre-allocated visual geom buffer is full. Increase maxgeom above 0. Time = 0.0180.
+
+Wed Nov  1 17:25:41 2023
+WARNING: Pre-allocated visual geom buffer is full. Increase maxgeom above 0. Time = 0.0180.
+
+Wed Nov  1 17:25:41 2023
+ERROR: mjvScene scale too small in mjv_room2model
+
+Wed Nov  1 17:25:57 2023
+WARNING: Pre-allocated visual geom buffer is full. Increase maxgeom above 0. Time = 0.0180.
+
+Wed Nov  1 17:25:57 2023
+ERROR: mjvScene scale too small in mjv_room2model
+
+Wed Nov  1 17:26:50 2023
+WARNING: Pre-allocated visual geom buffer is full. Increase maxgeom above 0. Time = 0.0180.
+
+Wed Nov  1 17:26:50 2023
+ERROR: mjvScene scale too small in mjv_room2model
+

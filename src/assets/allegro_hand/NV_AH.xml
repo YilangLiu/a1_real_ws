@@ -1,0 +1,145 @@
+<mujoco model="kuka_allegro">
+    <compiler angle="radian" meshdir="./meshes/" autolimits="true"/>
+    <size/>
+    <default/>
+    <asset>
+        <mesh name="allegro_mount" file="mounts/allegro_mount.obj"/>
+        <mesh name="base_link" file="allegro/base_link.obj"/>
+        <mesh name="primary_base" file="allegro/primary_base.obj"/>
+        <mesh name="primary_proximal" file="allegro/primary_proximal.obj"/>
+        <mesh name="primary_medial" file="allegro/primary_medial.obj"/>
+        <mesh name="biotac_sensor_base" file="biotac/visual/biotac_sensor_base.obj"/>
+        <mesh name="biotac_sensor_tip" file="biotac/visual/biotac_sensor_tip.obj"/>
+        <mesh name="thumb_base" file="allegro/thumb_base.obj"/>
+        <mesh name="thumb_proximal" file="allegro/thumb_proximal.obj"/>
+        <mesh name="thumb_medial" file="allegro/thumb_medial.obj"/>
+        <mesh name="biotac_sensor_thumb_base" file="biotac/visual/biotac_sensor_thumb_base.obj"/>
+        <mesh name="biotac_sensor_thumb_tip" file="biotac/visual/biotac_sensor_thumb_tip.obj"/>
+    </asset>
+
+
+    <worldbody>
+        <!-- set up a light pointing down on the robot -->
+        <light directional="true" pos="-0.5 0.5 3" dir="0 0 -1" />
+        <!-- add a floor so we don't stare off into the abyss -->
+        <geom name="floor" pos="0 0 0" size="1 1 1" type="plane" rgba="1 0.83 0.61 0.5"/>
+        
+        <body name="allegro_hand" pos="0 0 0.5" euler="0 0 0">
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="allegro_mount"/>
+            <!-- <geom type="mesh" mesh="allegro_mount"/> -->
+            <!-- <body name="base_link"> -->
+                <!-- <geom pos="-0.008219 -0.02063 0.08086" quat="0.65328 0.270598 -0.653283 0.270597" type="mesh" density="0" rgba="0.2 0.2 0.2 1" mesh="base_link"/> -->
+                <geom pos="-0.008219 -0.02063 0.08086" quat="0.65328 0.270598 -0.653283 0.270597" type="mesh" rgba="0.2 0.2 0.2 1" mesh="base_link"/>
+            <!-- </body> -->
+    
+            <body name="index_link_0" pos="0.0254533 -0.038322 0.13229" quat="-0.382319 0.0167293 -0.0403325 0.922998">
+                <inertial pos="0 0 0" quat="0.707107 0.707107 0 0" mass="0.0119" diaginertia="1.01667e-06 1.01667e-06 6.47677e-07"/>
+                <joint name="index_joint_0" pos="0 0 0" axis="0 0 1" range="-0.558489 0.558489" damping="0.0414019" frictionloss="0.0523963"/>
+                <!-- <geom type="mesh" mesh="primary_base"/> -->
+                <!-- <geom type="mesh" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="primary_base"/> -->
+                <body name="index_link_1" pos="0 0 0" quat="-0.499954 0.500046 0.499977 0.500023">
+                    <inertial pos="0 0 0" quat="0.702596 0.559386 -0.178354 0.402039" mass="0.065" diaginertia="6.12799e-05 6.12799e-05 6.12799e-05"/>
+                    <joint name="index_joint_1" pos="0 0 0" axis="0 0 1" range="-0.279244 1.72782" damping="0.00587541" frictionloss="0.0150275"/>
+                    <geom type="mesh" mesh="primary_proximal"/>
+                    <geom type="mesh" contype="0" conaffinity="2" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="primary_proximal"/>
+                    <body name="index_link_2" pos="0.054 0 0">
+                        <inertial pos="0 0 0" quat="0.719796 0.528175 -0.157463 0.422055" mass="0.0355" diaginertia="2.20969e-05 2.20969e-05 2.20969e-05"/>
+                        <joint name="index_joint_2" pos="0 0 0" axis="0 0 1" range="-0.279244 1.72782" damping="0.010638" frictionloss="0.00616359"/>
+                        <geom type="mesh" mesh="primary_medial"/>
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="primary_medial"/>
+                        <body name="index_link_3" pos="0.0384 0 0">
+                            <inertial pos="0 0 0" mass="0.0306" diaginertia="5.3186e-06 5.3186e-06 5.3186e-06"/>
+                            <joint name="index_joint_3" pos="0 0 0" axis="0 0 1" range="-0.279244 1.72782" damping="0.0226948" frictionloss="0.0227036"/>
+                            <geom type="mesh" mesh="biotac_sensor_base"/>
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0 0.5 0 1" mesh="biotac_sensor_base"/>
+                            <geom type="mesh" mesh="biotac_sensor_tip"/>
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0 0.5 0 1" mesh="biotac_sensor_tip"/>
+                        </body>
+                    </body>
+                </body>
+            </body>
+
+
+            <body name="middle_link_0" pos="-0.00643518 -0.00643349 0.134598" quat="-0.382683 3.74319e-05 -3.4639e-05 0.92388">
+                <inertial pos="0 0 0" quat="0.707107 0.707107 0 0" mass="0.0119" diaginertia="1.01667e-06 1.01667e-06 6.47677e-07"/>
+                <joint name="middle_joint_0" pos="0 0 0" axis="0 0 1" range="-0.558489 0.558489" damping="0.0414019" frictionloss="0.0523963"/>
+                <!-- <geom type="mesh" mesh="primary_base"/> -->
+                <!-- <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="primary_base"/> -->
+                <body name="middle_link_1" pos="0 0 0" quat="-0.499954 0.500046 0.499977 0.500023">
+                    <inertial pos="0 0 0" quat="0.702596 0.559386 -0.178354 0.402039" mass="0.065" diaginertia="6.12799e-05 6.12799e-05 6.12799e-05"/>
+                    <joint name="middle_joint_1" pos="0 0 0" axis="0 0 1" range="-0.279244 1.72782" damping="0.00587541" frictionloss="0.0150275"/>
+                    <geom type="mesh" mesh="primary_proximal"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="primary_proximal"/>
+                    <body name="middle_link_2" pos="0.054 0 0">
+                    <inertial pos="0 0 0" quat="0.719796 0.528175 -0.157463 0.422055" mass="0.0355" diaginertia="2.20969e-05 2.20969e-05 2.20969e-05"/>
+                    <joint name="middle_joint_2" pos="0 0 0" axis="0 0 1" range="-0.279244 1.72782" damping="0.010638" frictionloss="0.00616359"/>
+                    <geom type="mesh" mesh="primary_medial"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="primary_medial"/>
+                    <body name="middle_link_3" pos="0.0384 0 0">
+                        <inertial pos="0 0 0" mass="0.0306" diaginertia="5.3186e-06 5.3186e-06 5.3186e-06"/>
+                        <joint name="middle_joint_3" pos="0 0 0" axis="0 0 1" range="-0.279244 1.72782" damping="0.0226948" frictionloss="0.0227036"/>
+                        <geom type="mesh" mesh="biotac_sensor_base"/>
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0 0.5 0 1" mesh="biotac_sensor_base"/>
+                        <geom type="mesh" mesh="biotac_sensor_tip"/>
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0 0.5 0 1" mesh="biotac_sensor_tip"/>
+                    </body>
+                    </body>
+                </body>
+            </body>
+
+            <body name="ring_link_0" pos="-0.0383241 0.0254555 0.13229" quat="-0.382319 -0.0166545 0.0402633 0.923003">
+            <inertial pos="0 0 0" quat="0.707107 0.707107 0 0" mass="0.0119" diaginertia="1.01667e-06 1.01667e-06 6.47677e-07"/>
+            <joint name="ring_joint_0" pos="0 0 0" axis="0 0 1" range="-0.558489 0.558489" damping="0.0414019" frictionloss="0.0523963"/>
+            <!-- <geom type="mesh" mesh="primary_base"/> -->
+            <!-- <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="primary_base"/> -->
+            <body name="ring_link_1" pos="0 0 0" quat="-0.499954 0.500046 0.499977 0.500023">
+                <inertial pos="0 0 0" quat="0.702596 0.559386 -0.178354 0.402039" mass="0.065" diaginertia="6.12799e-05 6.12799e-05 6.12799e-05"/>
+                <joint name="ring_joint_1" pos="0 0 0" axis="0 0 1" range="-0.279244 1.72782" damping="0.00587541" frictionloss="0.0150275"/>
+                <geom type="mesh" mesh="primary_proximal"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="primary_proximal"/>
+                <body name="ring_link_2" pos="0.054 0 0">
+                <inertial pos="0 0 0" quat="0.719796 0.528175 -0.157463 0.422055" mass="0.0355" diaginertia="2.20969e-05 2.20969e-05 2.20969e-05"/>
+                <joint name="ring_joint_2" pos="0 0 0" axis="0 0 1" range="-0.279244 1.72782" damping="0.010638" frictionloss="0.00616359"/>
+                <geom type="mesh" mesh="primary_medial"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="primary_medial"/>
+                <body name="ring_link_3" pos="0.0384 0 0">
+                    <inertial pos="0 0 0" mass="0.0306" diaginertia="5.3186e-06 5.3186e-06 5.3186e-06"/>
+                    <joint name="ring_joint_3" pos="0 0 0" axis="0 0 1" range="-0.279244 1.72782" damping="0.0226948" frictionloss="0.0227036"/>
+                    <geom type="mesh" mesh="biotac_sensor_base"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0 0.5 0 1" mesh="biotac_sensor_base"/>
+                    <geom type="mesh" mesh="biotac_sensor_tip"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0 0.5 0 1" mesh="biotac_sensor_tip"/>
+                </body>
+                </body>
+            </body>
+            </body>
+
+            <body name="thumb_link_0" pos="0.0183882 -0.00551769 0.0441119" quat="0.0166912 0.382298 -0.923009 -0.0402982">
+            <inertial pos="0 0 0" quat="0.692635 0.569362 -0.07143 0.437013" mass="0.0176" diaginertia="1.73852e-05 1.73852e-05 1.73852e-05"/>
+            <joint name="thumb_joint_0" pos="0 0 0" axis="0 0 1" range="0.279244 1.57075" frictionloss="0.035"/>
+            <!-- <geom type="mesh" mesh="thumb_base"/> -->
+            <!-- <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="thumb_base"/> -->
+            <body name="thumb_link_1" pos="0.005 0 0" quat="0.707123 0.70709 0 0">
+                <inertial pos="0 0 0" quat="-0.0269589 0.880876 0.334036 0.334292" mass="0.0119" diaginertia="4.33621e-06 4.33621e-06 4.33621e-06"/>
+                <joint name="thumb_joint_1" pos="0 0 0" axis="0 0 1" range="-0.331603 1.15188" frictionloss="0.035"/>
+                <geom type="mesh" mesh="thumb_proximal"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="thumb_proximal"/>
+                <body name="thumb_link_2" pos="0 0 0.0554" quat="3.27587e-05 0.707123 -3.27572e-05 0.70709">
+                <inertial pos="0 0 0" quat="0.70472 0.55555 -0.174905 0.405146" mass="0.038" diaginertia="3.35111e-05 3.35111e-05 3.35111e-05"/>
+                <joint name="thumb_joint_2" pos="0 0 0" axis="0 0 1" range="-0.279244 1.72782" frictionloss="0.035"/>
+                <geom type="mesh" mesh="thumb_medial"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="thumb_medial"/>
+                <body name="thumb_link_3" pos="0.0514 0 0">
+                    <inertial pos="0 0 0" quat="0.5 0.5 0.5 0.5" mass="0.0598" diaginertia="2.78326e-05 2.78326e-05 2.78326e-05"/>
+                    <joint name="thumb_joint_3" pos="0 0 0" axis="0 0 1" range="-0.279244 1.76273" frictionloss="0.035"/>
+                    <geom type="mesh" mesh="biotac_sensor_thumb_base"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0 0.5 0 1" mesh="biotac_sensor_thumb_base"/>
+                    <geom type="mesh" mesh="biotac_sensor_thumb_tip"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0 0.5 0 1" mesh="biotac_sensor_thumb_tip"/>
+                </body>
+                </body>
+            </body>
+            </body>
+        </body>
+  </worldbody>
+</mujoco>

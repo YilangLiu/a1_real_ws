@@ -1,0 +1,175 @@
+<mujoco model="turtle">
+
+
+    <include file="./common/visual.xml"/>
+    <include file="./common/materials.xml"/>
+    <asset>
+        <texture name="skybox" type="skybox" builtin="gradient"
+                rgb1=".4 .6 .8" rgb2="0 0 0" width="800" height="800" mark="random" markrgb="1 1 1"/>
+    </asset>
+
+    <compiler angle="degree" coordinate="local" inertiafromgeom="true"/>
+    <option integrator="RK4" timestep="0.01"/>
+    <custom>
+        <numeric data="0.0 0.0 0.55 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 -1.0 0.0 1.0" name="init_qpos"/> 
+    </custom>
+    <default>
+        <joint armature="1" damping="1" limited="true"/>
+        <geom conaffinity="0" condim="3" density="5.0" friction="1 0.5 0.5" margin="0.01" rgba="0.8 0.6 0.4 1"/>
+    </default>
+
+    <!-- <asset>
+        <texture builtin="gradient" height="100" rgb1="1 1 1" rgb2="0 0 0" type="skybox" width="100"/>
+        <texture builtin="flat" height="1278" mark="cross" markrgb="1 1 1" name="texgeom" random="0.01" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" type="cube" width="127"/>
+        <texture builtin="checker" height="100" name="texplane" rgb1="0 0 0" rgb2="0.8 0.8 0.8" type="2d" width="100"/>
+        <material name="MatPlane" reflectance="0.5" shininess="1" specular="1" texrepeat="60 60" texture="texplane"/>
+        <material name="geom" texture="texgeom" texuniform="true"/>
+    </asset> -->
+
+
+  <worldbody>
+    <light cutoff="100" diffuse="1 1 1" dir="-0 0 -1.3" directional="true" exponent="1" pos="0 0 1.3" specular=".1 .1 .1"/>
+    <!-- <geom conaffinity="1" condim="3" material="MatPlane" name="floor" pos="0 0 0" euler="0 5 0" rgba="0.8 0.9 0.8 1" size="40 40 40" type="plane"/> -->
+
+    <camera name="tracking_x" pos="0 -2 0.3" xyaxes="1 0 0 0 0 1" fovy="60" mode="trackcom"/>
+
+    <geom name="ground" type="plane" size="10 10 .1" material="grid" conaffinity="1" condim="3"  pos='0 0 0'/>
+
+
+    <body name="torso" pos="0 0 0.25">
+        <light name="light" diffuse=".6 .6 .6" pos="0 0 0.5" dir="0 0 -1" specular=".3 .3 .3" mode="track"/>
+
+        <!-- <camera name="track" mode="trackcom" pos="0 -3 0.3" xyaxes="1 0 0 0 0 1"/> -->
+        <geom name="torso_geom" pos="0.03 0 0" size="0.17 0.09 0.05" type="ellipsoid" rgba="0.039 0.238 1 1"/>
+        <joint armature="0" damping="0" limited="false" margin="0.01" name="root" pos="0 0 0" type="free"/>
+
+        <!-- front left assembly -->
+        <body name="front_left_roll_motor" pos="0.1 0.0743 0" >
+            <geom pos="0 0 0" euler="0 90 90" name="roll_motor_1" size="0.0325 0.02 0.023" type="box" rgba= "1 1 1 1"/>
+            <body name="front_left_pitch_motor" pos="0.05 0.01 0.016"  >
+                <!-- <site name="front_left_pitch_motor_site"/> -->
+                <geom euler="90 0 90" name="pitch_motor_1" size="0.0325 0.02 0.023" type="box" rgba= "1 1 1 1"/>
+                <joint axis="1 0 0" range = "-180 180" name="roll_1" pos="0.0 0.0 0.0" type="hinge"/>
+                <body name="front_left_twist_motor" pos="0.01 0.05 -0.01" >
+                    <!-- <site name="front_left_twist_motor_site"/> -->
+                    <geom  euler="0 0 0" name="twist_motor_1" size="0.0325 0.02 0.023" type="box" rgba= "1 1 1 1"/>
+                    <joint axis="0 1 0" range = "-180 180" name="pitch_1" pos="0.0 0.0 0.0" type="hinge"/>
+                    <body name="front_left_flipper" pos="0 0 -0.02" >
+                        <!-- <site name="front_left_flipper_site"/> -->
+                        <geom pos="0 0 -0.095" name="flipper_1" size="0.027 0.01 0.095" type="ellipsoid" rgba="0.097 0.83 0.39 1"/> 
+                        <geom pos="0 0 -0.175" name="foot_1" size="0.02" type="sphere" rgba="0.097 0.83 0.39 1"/>
+                        <joint axis="0 0 1" range = "-180 180" name="twist_1" pos="0.0 0.0 0.0" type="hinge"/>
+                    </body>
+                </body>
+            </body>
+        </body>
+
+
+        <!-- front right assembly -->
+        <body name="front_right_roll_motor" pos="0.1 -0.0743 0" >
+            <geom pos="0 0 0" euler="0 90 90" name="roll_motor_2" size="0.0325 0.02 0.023" type="box" rgba= "1 1 1 1"/>
+            <body name="front_right_pitch_motor" pos="0.05 -0.01 0.016"  >
+            <!-- <site name="front_right_pitch_motor_site"/> -->
+            <geom euler="90 0 90" name="pitch_motor_2" size="0.0325 0.02 0.023" type="box" rgba= "1 1 1 1"/>
+            <joint axis="1 0 0" range = "-180 180" name="roll_2" pos="0.0 0.0 0.0" type="hinge"/>
+            <body name="front_right_twist_motor" pos="0.01 -0.05 -0.01" >
+                <!-- <site name="front_right_twist_motor_site"/> -->
+                <geom  euler="0 0 0" name="twist_motor_2" size="0.0325 0.02 0.023" type="box" rgba= "1 1 1 1"/>
+                <joint axis="0 1 0" range = "-180 180" name="pitch_2" pos="0.0 0.0 0.0" type="hinge"/>
+                <body name="front_right_flipper" pos="0 0 -0.02" >
+                    <!-- <site name="front_right_flipper_site"/> -->
+                    <geom pos="0 0 -0.095" name="flipper_2" size="0.027 0.01 0.095" type="ellipsoid" rgba="0.097 0.83 0.39 1"/>
+                    <geom pos="0 0 -0.175" name="foot_2" size="0.02" type="sphere" rgba="0.097 0.83 0.39 1"/>
+                    <joint axis="0 0 1" range = "-180 180" name="twist_2" pos="0.0 0.0 0.0" type="hinge"/>
+                </body>
+            </body>
+            </body>
+        </body>
+      <!-- back left assembly -->
+      <body name="back_left_roll_motor" pos="-0.13 0.0743 0" >
+        <geom pos="0 0 0" euler="0 90 90" name="roll_motor_3" size="0.0325 0.02 0.023" type="box" rgba= "1 1 1 1"/>
+        <body name="back_left_pitch_motor" pos="0.05 0.01 0.016"  >
+          <!-- <site name="back_left_pitch_motor_site"/> -->
+          <geom euler="90 0 90" name="pitch_motor_3" size="0.0325 0.02 0.023" type="box" rgba= "1 1 1 1"/>
+          <joint axis="1 0 0" range = "-180 180" name="roll_3" pos="0.0 0.0 0.0" type="hinge"/>
+          <body name="back_left_twist_motor" pos="0.01 0.05 -0.01" >
+            <!-- <site name="back_left_twist_motor_site"/> -->
+            <geom  euler="0 0 0" name="twist_motor_3" size="0.0325 0.02 0.023" type="box" rgba= "1 1 1 1"/>
+            <joint axis="0 1 0" range = "-180 180" name="pitch_3" pos="0.0 0.0 0.0" type="hinge"/>
+            <body name="back_left_flipper" pos="0 0 -0.02" >
+              <!-- <site name="back_left_flipper_site"/> -->
+              <geom pos="0 0 -0.095" name="flipper_3" size="0.027 0.01 0.095" type="ellipsoid" rgba="0.097 0.83 0.39 1"/> 
+              <geom pos="0 0 -0.175" name="foot_3" size="0.02" type="sphere" rgba="0.097 0.83 0.39 1"/>
+              <joint axis="0 0 1" range = "-180 180" name="twist_3" pos="0.0 0.0 0.0" type="hinge"/>
+            </body>
+          </body>
+        </body>
+      </body>
+
+      <!-- back right assembly -->
+      <body name="back_right_roll_motor" pos="-0.13 -0.0743 0" >
+        <geom pos="0 0 0" euler="0 90 90" name="roll_motor_4" size="0.0325 0.02 0.023" type="box" rgba= "1 1 1 1"/>
+        <body name="back_right_pitch_motor" pos="0.05 -0.01 0.016"  >
+          <!-- <site name="back_right_pitch_motor_site"/> -->
+          <geom euler="90 0 90" name="pitch_motor_4" size="0.0325 0.02 0.023" type="box" rgba= "1 1 1 1"/>
+          <joint axis="1 0 0" range = "-180 180" name="roll_4" pos="0.0 0.0 0.0" type="hinge"/>
+          <body name="back_right_twist_motor" pos="0.01 -0.05 -0.01" >
+            <!-- <site name="back_right_twist_motor_site"/> -->
+            <geom  euler="0 0 0" name="twist_motor_4" size="0.0325 0.02 0.023" type="box" rgba= "1 1 1 1"/>
+            <joint axis="0 1 0" range = "-180 180" name="pitch_4" pos="0.0 0.0 0.0" type="hinge"/>
+            <body name="back_right_flipper" pos="0 0 -0.02" >
+              <!-- <site name="back_right_flipper_site"/> -->
+              <geom pos="0 0 -0.095" name="flipper_4" size="0.027 0.01 0.095" type="ellipsoid" rgba="0.097 0.83 0.39 1"/> 
+              <geom pos="0 0 -0.175" name="foot_4" size="0.02" type="sphere" rgba="0.097 0.83 0.39 1"/>
+              <joint axis="0 0 1" range = "-180 180" name="twist_4" pos="0.0 0.0 0.0" type="hinge"/>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <position ctrllimited="true" ctrlrange="-90.0 90.0" forcelimited="true" forcerange="-1.0 1.0" joint="roll_1"  gear="10"/>
+    <position ctrllimited="true" ctrlrange="-90.0 90.0" forcelimited="true" forcerange="-1.0 1.0" joint="pitch_1" gear="10"/>
+    <position ctrllimited="true" ctrlrange="-90.0 90.0" forcelimited="true" forcerange="-1.0 1.0" joint="twist_1" gear="10"/>
+    <position ctrllimited="true" ctrlrange="-90.0 90.0" forcelimited="true" forcerange="-1.0 1.0" joint="roll_2"  gear="10"/>
+    <position ctrllimited="true" ctrlrange="-90.0 90.0" forcelimited="true" forcerange="-1.0 1.0" joint="pitch_2" gear="10"/>
+    <position ctrllimited="true" ctrlrange="-90.0 90.0" forcelimited="true" forcerange="-1.0 1.0" joint="twist_2" gear="10"/>
+    <position ctrllimited="true" ctrlrange="-90.0 90.0" forcelimited="true" forcerange="-1.0 1.0" joint="roll_3"  gear="10"/>
+    <position ctrllimited="true" ctrlrange="-90.0 90.0" forcelimited="true" forcerange="-1.0 1.0" joint="pitch_3" gear="10"/>
+    <position ctrllimited="true" ctrlrange="-90.0 90.0" forcelimited="true" forcerange="-1.0 1.0" joint="twist_3" gear="10"/>
+    <position ctrllimited="true" ctrlrange="-90.0 90.0" forcelimited="true" forcerange="-1.0 1.0" joint="roll_4"  gear="10"/>
+    <position ctrllimited="true" ctrlrange="-90.0 90.0" forcelimited="true" forcerange="-1.0 1.0" joint="pitch_4" gear="10"/>
+    <position ctrllimited="true" ctrlrange="-90.0 90.0" forcelimited="true" forcerange="-1.0 1.0" joint="twist_4" gear="10"/>
+  </actuator>
+
+  <!-- <actuator>
+    <motor ctrllimited="true" ctrlrange="-2.0 2.0" forcelimited="true" forcerange="-1.0 1.0" joint="roll_1"  gear="120"/>
+    <motor ctrllimited="true" ctrlrange="-2.0 2.0" forcelimited="true" forcerange="-1.0 1.0" joint="pitch_1" gear="120"/>
+    <motor ctrllimited="true" ctrlrange="-2.0 2.0" forcelimited="true" forcerange="-1.0 1.0" joint="twist_1" gear="120"/>
+    <motor ctrllimited="true" ctrlrange="-2.0 2.0" forcelimited="true" forcerange="-1.0 1.0" joint="roll_2"  gear="120"/>
+    <motor ctrllimited="true" ctrlrange="-2.0 2.0" forcelimited="true" forcerange="-1.0 1.0" joint="pitch_2" gear="120"/>
+    <motor ctrllimited="true" ctrlrange="-2.0 2.0" forcelimited="true" forcerange="-1.0 1.0" joint="twist_2" gear="120"/>
+    <motor ctrllimited="true" ctrlrange="-2.0 2.0" forcelimited="true" forcerange="-1.0 1.0" joint="roll_3"  gear="120"/>
+    <motor ctrllimited="true" ctrlrange="-2.0 2.0" forcelimited="true" forcerange="-1.0 1.0" joint="pitch_3" gear="120"/>
+    <motor ctrllimited="true" ctrlrange="-2.0 2.0" forcelimited="true" forcerange="-1.0 1.0" joint="twist_3" gear="120"/>
+    <motor ctrllimited="true" ctrlrange="-2.0 2.0" forcelimited="true" forcerange="-1.0 1.0" joint="roll_4"  gear="120"/>
+    <motor ctrllimited="true" ctrlrange="-2.0 2.0" forcelimited="true" forcerange="-1.0 1.0" joint="pitch_4" gear="120"/>
+    <motor ctrllimited="true" ctrlrange="-2.0 2.0" forcelimited="true" forcerange="-1.0 1.0" joint="twist_4" gear="120"/>
+  </actuator> -->
+  <!-- <sensor>
+    <torque name = "front_left_roll_sensor" site="front_left_pitch_motor_site"/>
+    <torque name = "front_left_pitch_sensor" site="front_left_twist_motor_site"/>
+    <torque name = "front_left_twist_sensor" site="front_left_flipper_site"/>
+    <torque name = "front_right_roll_sensor" site="front_right_pitch_motor_site"/>
+    <torque name = "front_right_pitch_sensor" site="front_right_twist_motor_site"/>
+    <torque name = "front_right_twist_sensor" site="front_right_flipper_site"/>
+    <torque name = "back_left_roll_sensor" site="back_left_pitch_motor_site"/>
+    <torque name = "back_left_pitch_sensor" site="back_left_twist_motor_site"/>
+    <torque name = "back_left_twist_sensor" site="back_left_flipper_site"/>
+    <torque name = "back_right_roll_sensor" site="back_right_pitch_motor_site"/>
+    <torque name = "back_right_pitch_sensor" site="back_right_twist_motor_site"/>
+    <torque name = "back_right_twist_sensor" site="back_right_flipper_site"/>
+  </sensor> -->
+</mujoco>

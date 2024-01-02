@@ -1,0 +1,195 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"generate_messages",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"build/a1_msgs/cmake/a1_msgs-genmsg.cmake",
+			"/opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake",
+			"a1_msgs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 307,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 307,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 414,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 411,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 408,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 316,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 318,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 314,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 320,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "sensor_msgs_generate_messages_py::@53a1c77378c09a833c6d"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "geometry_msgs_generate_messages_py::@53a1c77378c09a833c6d"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "std_msgs_generate_messages_py::@53a1c77378c09a833c6d"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "_a1_msgs_generate_messages_check_deps_FootState::@d6078504a097b3186119"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "_a1_msgs_generate_messages_check_deps_FootPlanDiscrete::@d6078504a097b3186119"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "_a1_msgs_generate_messages_check_deps_Contact::@d6078504a097b3186119"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "_a1_msgs_generate_messages_check_deps_MultiFootPlanDiscrete::@d6078504a097b3186119"
+		}
+	],
+	"id" : "a1_msgs_generate_messages_py::@d6078504a097b3186119",
+	"name" : "a1_msgs_generate_messages_py",
+	"paths" : 
+	{
+		"build" : "a1_msgs",
+		"source" : "a1_msgs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/a1_msgs/CMakeFiles/a1_msgs_generate_messages_py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/a1_msgs/CMakeFiles/a1_msgs_generate_messages_py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/a1_msgs/msg/_Contact.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/a1_msgs/msg/_FootState.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/a1_msgs/msg/_FootPlanDiscrete.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/a1_msgs/msg/_MultiFootPlanDiscrete.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/a1_msgs/msg/__init__.py.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

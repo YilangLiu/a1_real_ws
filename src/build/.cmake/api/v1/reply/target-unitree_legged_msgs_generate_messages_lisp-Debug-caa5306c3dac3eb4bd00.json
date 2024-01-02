@@ -1,0 +1,273 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"generate_messages",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"build/unitree_legged_msgs/cmake/unitree_legged_msgs-genmsg.cmake",
+			"/opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake",
+			"unitree_legged_msgs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 307,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 328,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 601,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 598,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 604,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 335,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 343,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 345,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 349,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 339,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 341,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 347,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 351,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "geometry_msgs_generate_messages_lisp::@53a1c77378c09a833c6d"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "std_msgs_generate_messages_lisp::@53a1c77378c09a833c6d"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "sensor_msgs_generate_messages_lisp::@53a1c77378c09a833c6d"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "_unitree_legged_msgs_generate_messages_check_deps_MotorCmd::@7039a2a4f5d2ff94768e"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "_unitree_legged_msgs_generate_messages_check_deps_LED::@7039a2a4f5d2ff94768e"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "_unitree_legged_msgs_generate_messages_check_deps_LowCmd::@7039a2a4f5d2ff94768e"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "_unitree_legged_msgs_generate_messages_check_deps_HighCmd::@7039a2a4f5d2ff94768e"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "_unitree_legged_msgs_generate_messages_check_deps_Cartesian::@7039a2a4f5d2ff94768e"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "_unitree_legged_msgs_generate_messages_check_deps_IMU::@7039a2a4f5d2ff94768e"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "_unitree_legged_msgs_generate_messages_check_deps_LowState::@7039a2a4f5d2ff94768e"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "_unitree_legged_msgs_generate_messages_check_deps_HighState::@7039a2a4f5d2ff94768e"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "_unitree_legged_msgs_generate_messages_check_deps_MotorState::@7039a2a4f5d2ff94768e"
+		}
+	],
+	"id" : "unitree_legged_msgs_generate_messages_lisp::@7039a2a4f5d2ff94768e",
+	"name" : "unitree_legged_msgs_generate_messages_lisp",
+	"paths" : 
+	{
+		"build" : "unitree_legged_msgs",
+		"source" : "unitree_legged_msgs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_generate_messages_lisp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_generate_messages_lisp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/common-lisp/ros/unitree_legged_msgs/msg/MotorCmd.lisp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/common-lisp/ros/unitree_legged_msgs/msg/MotorState.lisp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/common-lisp/ros/unitree_legged_msgs/msg/Cartesian.lisp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/common-lisp/ros/unitree_legged_msgs/msg/IMU.lisp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/common-lisp/ros/unitree_legged_msgs/msg/LED.lisp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/common-lisp/ros/unitree_legged_msgs/msg/LowCmd.lisp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/common-lisp/ros/unitree_legged_msgs/msg/LowState.lisp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/common-lisp/ros/unitree_legged_msgs/msg/HighCmd.lisp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/common-lisp/ros/unitree_legged_msgs/msg/HighState.lisp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

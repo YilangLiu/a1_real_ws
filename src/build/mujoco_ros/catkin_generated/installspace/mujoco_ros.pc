@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: mujoco_ros
+Description: Description of mujoco_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: mujoco_ros_msgs

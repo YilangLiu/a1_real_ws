@@ -1,0 +1,185 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"generate_messages",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"build/apriltag_ros/apriltag_ros/cmake/apriltag_ros-genmsg.cmake",
+			"/opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake",
+			"apriltag_ros/apriltag_ros/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 62,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 307,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 264,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 366,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 363,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 369,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 271,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 273,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 275,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "sensor_msgs_generate_messages_py::@53a1c77378c09a833c6d"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "geometry_msgs_generate_messages_py::@53a1c77378c09a833c6d"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "std_msgs_generate_messages_py::@53a1c77378c09a833c6d"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "_apriltag_ros_generate_messages_check_deps_AprilTagDetection::@0b06dc2335753f890fe4"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "_apriltag_ros_generate_messages_check_deps_AprilTagDetectionArray::@0b06dc2335753f890fe4"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "_apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage::@0b06dc2335753f890fe4"
+		}
+	],
+	"id" : "apriltag_ros_generate_messages_py::@0b06dc2335753f890fe4",
+	"name" : "apriltag_ros_generate_messages_py",
+	"paths" : 
+	{
+		"build" : "apriltag_ros/apriltag_ros",
+		"source" : "apriltag_ros/apriltag_ros"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/apriltag_ros/msg/_AprilTagDetection.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/apriltag_ros/msg/_AprilTagDetectionArray.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/apriltag_ros/srv/_AnalyzeSingleImage.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/apriltag_ros/msg/__init__.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/apriltag_ros/srv/__init__.py.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

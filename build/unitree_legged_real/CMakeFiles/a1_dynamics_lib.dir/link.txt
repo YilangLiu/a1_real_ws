@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -O3 -DNDEBUG  -shared -Wl,-soname,liba1_dynamics_lib.so -o /home/yilangliu/a1_real_ws/devel/lib/liba1_dynamics_lib.so CMakeFiles/a1_dynamics_lib.dir/src/exe/A1_dynamics_pino.cpp.o   -L/home/yilangliu/a1_real_ws/src/unitree_legged_real/../mujoco-2.3.5/bin 

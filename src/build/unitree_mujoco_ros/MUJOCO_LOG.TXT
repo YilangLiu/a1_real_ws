@@ -1,0 +1,3 @@
+Sun Sep 10 13:50:12 2023
+WARNING: mju_openResource: unknown file '../../assets/unitree_mujoco/data/a1/a1.xml'
+

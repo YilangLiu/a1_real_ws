@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/yilangliu/a1_real_ws/devel/include/**",
+                "/opt/ros/noetic/include/**",
+                "/home/yilangliu/a1_real_ws/src/unitree_ros/unitree_controller/include/**",
+                "/home/yilangliu/a1_real_ws/src/unitree_ros/unitree_legged_control/include/**",
+                "/home/yilangliu/a1_real_ws/src/unitree_legged_real/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,8 @@
+prefix=/home/yilangliu/a1_real_ws/src/build/devel
+
+Name: mujoco_ros
+Description: Description of mujoco_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: mujoco_ros_msgs

@@ -1,0 +1,241 @@
+[
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -isystem /usr/src/googletest/googlemock/include -isystem /usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"apriltag_ros\\\" -Idevel/include -I../apriltag_ros/apriltag_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /usr/include/opencv4 -isystem /usr/local/include/apriltag  -g   -O3 -funsafe-loop-optimizations -fsee -funroll-loops -fno-math-errno -funsafe-math-optimizations -ffinite-math-only -fno-signed-zeros -std=gnu++17 -o apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_client_node.dir/src/apriltag_ros_single_image_client_node.cpp.o -c /home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/src/apriltag_ros_single_image_client_node.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/src/apriltag_ros_single_image_client_node.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"apriltag_ros\\\" -Idevel/include -I../apriltag_ros/apriltag_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /usr/include/opencv4 -isystem /usr/local/include/apriltag  -g   -O3 -funsafe-loop-optimizations -fsee -funroll-loops -fno-math-errno -funsafe-math-optimizations -ffinite-math-only -fno-signed-zeros -std=gnu++17 -o apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_node.dir/src/apriltag_ros_continuous_node.cpp.o -c /home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/src/apriltag_ros_continuous_node.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/src/apriltag_ros_continuous_node.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"apriltag_ros\\\" -Idevel/include -I../apriltag_ros/apriltag_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /usr/include/opencv4 -isystem /usr/local/include/apriltag  -g   -O3 -funsafe-loop-optimizations -fsee -funroll-loops -fno-math-errno -funsafe-math-optimizations -ffinite-math-only -fno-signed-zeros -std=gnu++17 -o apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_server_node.dir/src/apriltag_ros_single_image_server_node.cpp.o -c /home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/src/apriltag_ros_single_image_server_node.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/src/apriltag_ros_single_image_server_node.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"apriltag_ros\\\" -Dapriltag_ros_continuous_detector_EXPORTS -Idevel/include -I../apriltag_ros/apriltag_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /usr/include/opencv4 -isystem /usr/local/include/apriltag  -g -fPIC   -O3 -funsafe-loop-optimizations -fsee -funroll-loops -fno-math-errno -funsafe-math-optimizations -ffinite-math-only -fno-signed-zeros -std=gnu++17 -o apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_detector.dir/src/continuous_detector.cpp.o -c /home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/src/continuous_detector.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/src/continuous_detector.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"apriltag_ros\\\" -Dapriltag_ros_common_EXPORTS -Idevel/include -I../apriltag_ros/apriltag_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /usr/include/opencv4 -isystem /usr/local/include/apriltag  -g -fPIC   -O3 -funsafe-loop-optimizations -fsee -funroll-loops -fno-math-errno -funsafe-math-optimizations -ffinite-math-only -fno-signed-zeros -std=gnu++17 -o apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_common.dir/src/common_functions.cpp.o -c /home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/src/common_functions.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/src/common_functions.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"apriltag_ros\\\" -Dapriltag_ros_single_image_detector_EXPORTS -Idevel/include -I../apriltag_ros/apriltag_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /usr/include/opencv4 -isystem /usr/local/include/apriltag  -g -fPIC   -O3 -funsafe-loop-optimizations -fsee -funroll-loops -fno-math-errno -funsafe-math-optimizations -ffinite-math-only -fno-signed-zeros -std=gnu++17 -o apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_detector.dir/src/single_image_detector.cpp.o -c /home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/src/single_image_detector.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/src/single_image_detector.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"realsense2_camera\\\" -D_CRT_SECURE_NO_WARNINGS -Drealsense2_camera_EXPORTS -Idevel/include -I../realsense-ros/realsense2_camera/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv4  -fPIE -fPIC -std=c++11 -D_FORTIFY_SOURCE=2 -fstack-protector -Wformat -Wformat-security -Wall  -g -fPIC   -std=c++11 -o realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o -c /home/yilangliu/a1_real_ws/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"realsense2_camera\\\" -D_CRT_SECURE_NO_WARNINGS -Drealsense2_camera_EXPORTS -Idevel/include -I../realsense-ros/realsense2_camera/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv4  -fPIE -fPIC -std=c++11 -D_FORTIFY_SOURCE=2 -fstack-protector -Wformat -Wformat-security -Wall  -g -fPIC   -std=c++11 -o realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o -c /home/yilangliu/a1_real_ws/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"realsense2_camera\\\" -D_CRT_SECURE_NO_WARNINGS -Drealsense2_camera_EXPORTS -Idevel/include -I../realsense-ros/realsense2_camera/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv4  -fPIE -fPIC -std=c++11 -D_FORTIFY_SOURCE=2 -fstack-protector -Wformat -Wformat-security -Wall  -g -fPIC   -std=c++11 -o realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o -c /home/yilangliu/a1_real_ws/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_control\\\" -Dunitree_legged_control_EXPORTS -I../unitree_ros/unitree_legged_control/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -o unitree_ros/unitree_legged_control/CMakeFiles/unitree_legged_control.dir/src/joint_controller.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_ros/unitree_legged_control/src/joint_controller.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_ros/unitree_legged_control/src/joint_controller.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DHPP_FCL_HAS_OCTOMAP -DHPP_FCL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=9 -DOCTOMAP_PATCH_VERSION=8 -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include -isystem /usr/include/eigen3 -isystem /usr/local/include/osqp -isystem /opt/ros/noetic/include  -O3 -g   -std=c++11 -o unitree_legged_real/CMakeFiles/hardware_lcm.dir/src/exe/robot_hardware.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/robot_hardware.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/robot_hardware.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Drealsense_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_dynamics.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_dynamics.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_dynamics.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Drealsense_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_state_estimation.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_state_estimation.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_state_estimation.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Drealsense_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Drealsense_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_realsense.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_realsense.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include -isystem /usr/include/eigen3 -isystem /usr/local/include/osqp  -O3 -g   -std=c++11 -o unitree_legged_real/CMakeFiles/test_mpc.dir/src/exe/QP_mpc_test.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/QP_mpc_test.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/QP_mpc_test.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Da1_dynamics_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/a1_dynamics_lib.dir/src/exe/A1_dynamics_pino.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_dynamics_pino.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_dynamics_pino.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include -isystem /usr/include/eigen3 -isystem /usr/local/include/osqp  -O3 -g   -std=c++11 -o unitree_legged_real/CMakeFiles/a1_realsense.dir/src/exe/Main_Realsense.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Main_Realsense.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Main_Realsense.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g   -std=c++11 -o unitree_legged_real/CMakeFiles/lcm_server_3_2.dir/home/yilangliu/unitree_legged_sdk/examples/lcm_server.cpp.o -c /home/yilangliu/unitree_legged_sdk/examples/lcm_server.cpp",
+  "file": "/home/yilangliu/unitree_legged_sdk/examples/lcm_server.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include -isystem /usr/include/eigen3 -isystem /usr/local/include/osqp  -O3 -g   -std=c++11 -o unitree_legged_real/CMakeFiles/test_bezier.dir/src/exe/test_bezier.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/test_bezier.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/test_bezier.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DHPP_FCL_HAS_OCTOMAP -DHPP_FCL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=9 -DOCTOMAP_PATCH_VERSION=8 -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include -isystem /usr/include/eigen3 -isystem /opt/ros/noetic/include  -O3 -g   -std=c++11 -o unitree_legged_real/CMakeFiles/dynamic_test.dir/src/exe/test_dynamics.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/test_dynamics.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/test_dynamics.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include -isystem /usr/include/eigen3 -isystem /usr/local/include/osqp  -O3 -g   -std=c++11 -o unitree_legged_real/CMakeFiles/a1_gazebo.dir/src/exe/robot_gazebo.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/robot_gazebo.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/robot_gazebo.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Dhardware_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/src/exe/A1_Interface.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_Interface.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_Interface.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Dhardware_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/src/exe/A1_dynamics.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_dynamics.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_dynamics.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Dhardware_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/src/exe/A1_state_estimation.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_state_estimation.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_state_estimation.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Dhardware_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/src/exe/Utils.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Dhardware_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/src/exe/A1_QP_MPC.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_QP_MPC.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_QP_MPC.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Dhardware_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/src/exe/A1_control.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_control.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_control.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Dhardware_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/src/exe/Bezier_curve.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Bezier_curve.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Bezier_curve.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Dhardware_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/src/exe/A1_Gazebo.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_Gazebo.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_Gazebo.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DBOOST_TEST_DYN_LINK -DLIBBULLET_VERSION=2.88 -DLIBBULLET_VERSION_GT_282 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_controller\\\" -I../unitree_ros/unitree_controller/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/gazebo-11 -I/usr/include/bullet -I/usr/include/simbody -I/usr/include/sdformat-9.8 -I/usr/include/ignition/math6 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging -I/usr/include/ignition/transport8 -I/usr/include/ignition/msgs5 -I/usr/include/ignition/common3 -I/usr/include/ignition/fuel_tools4    -g   -o unitree_ros/unitree_controller/CMakeFiles/unitree_move_kinetic.dir/src/move_publisher.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_ros/unitree_controller/src/move_publisher.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_ros/unitree_controller/src/move_publisher.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DBOOST_TEST_DYN_LINK -DLIBBULLET_VERSION=2.88 -DLIBBULLET_VERSION_GT_282 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_controller\\\" -Dunitree_controller_EXPORTS -I../unitree_ros/unitree_controller/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/gazebo-11 -I/usr/include/bullet -I/usr/include/simbody -I/usr/include/sdformat-9.8 -I/usr/include/ignition/math6 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging -I/usr/include/ignition/transport8 -I/usr/include/ignition/msgs5 -I/usr/include/ignition/common3 -I/usr/include/ignition/fuel_tools4    -g -fPIC   -o unitree_ros/unitree_controller/CMakeFiles/unitree_controller.dir/src/body.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_ros/unitree_controller/src/body.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_ros/unitree_controller/src/body.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DBOOST_TEST_DYN_LINK -DLIBBULLET_VERSION=2.88 -DLIBBULLET_VERSION_GT_282 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_controller\\\" -I../unitree_ros/unitree_controller/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/gazebo-11 -I/usr/include/bullet -I/usr/include/simbody -I/usr/include/sdformat-9.8 -I/usr/include/ignition/math6 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging -I/usr/include/ignition/transport8 -I/usr/include/ignition/msgs5 -I/usr/include/ignition/common3 -I/usr/include/ignition/fuel_tools4    -g   -o unitree_ros/unitree_controller/CMakeFiles/unitree_servo.dir/src/servo.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_ros/unitree_controller/src/servo.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_ros/unitree_controller/src/servo.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DBOOST_TEST_DYN_LINK -DLIBBULLET_VERSION=2.88 -DLIBBULLET_VERSION_GT_282 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_controller\\\" -I../unitree_ros/unitree_controller/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/gazebo-11 -I/usr/include/bullet -I/usr/include/simbody -I/usr/include/sdformat-9.8 -I/usr/include/ignition/math6 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging -I/usr/include/ignition/transport8 -I/usr/include/ignition/msgs5 -I/usr/include/ignition/common3 -I/usr/include/ignition/fuel_tools4    -g   -o unitree_ros/unitree_controller/CMakeFiles/unitree_external_force.dir/src/external_force.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_ros/unitree_controller/src/external_force.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_ros/unitree_controller/src/external_force.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_TEST_DYN_LINK -DBOOST_THREAD_DYN_LINK -DLIBBULLET_VERSION=2.88 -DLIBBULLET_VERSION_GT_282 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_gazebo\\\" -DunitreeDrawForcePlugin_EXPORTS -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/gazebo-11 -I/usr/include/bullet -I/usr/include/sdformat-9.8 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging -isystem /usr/include/eigen3 -isystem /usr/include/simbody -isystem /usr/include/ignition/math6 -isystem /usr/include/ignition/transport8 -isystem /usr/include/ignition/msgs5 -isystem /usr/include/ignition/common3 -isystem /usr/include/ignition/fuel_tools4 -isystem /usr/include/sdformat-9.8/sdf/.. -isystem /usr/include/ignition/cmake2 -isystem /usr/include/uuid    -g -fPIC   -I/usr/include/uuid -std=gnu++17 -o unitree_ros/unitree_gazebo/CMakeFiles/unitreeDrawForcePlugin.dir/plugin/draw_force_plugin.cc.o -c /home/yilangliu/a1_real_ws/src/unitree_ros/unitree_gazebo/plugin/draw_force_plugin.cc",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_ros/unitree_gazebo/plugin/draw_force_plugin.cc"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_TEST_DYN_LINK -DBOOST_THREAD_DYN_LINK -DLIBBULLET_VERSION=2.88 -DLIBBULLET_VERSION_GT_282 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_gazebo\\\" -DunitreeFootContactPlugin_EXPORTS -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/gazebo-11 -I/usr/include/bullet -I/usr/include/sdformat-9.8 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging -isystem /usr/include/eigen3 -isystem /usr/include/simbody -isystem /usr/include/ignition/math6 -isystem /usr/include/ignition/transport8 -isystem /usr/include/ignition/msgs5 -isystem /usr/include/ignition/common3 -isystem /usr/include/ignition/fuel_tools4 -isystem /usr/include/sdformat-9.8/sdf/.. -isystem /usr/include/ignition/cmake2 -isystem /usr/include/uuid    -g -fPIC   -I/usr/include/uuid -std=gnu++17 -o unitree_ros/unitree_gazebo/CMakeFiles/unitreeFootContactPlugin.dir/plugin/foot_contact_plugin.cc.o -c /home/yilangliu/a1_real_ws/src/unitree_ros/unitree_gazebo/plugin/foot_contact_plugin.cc",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_ros/unitree_gazebo/plugin/foot_contact_plugin.cc"
+}
+]
