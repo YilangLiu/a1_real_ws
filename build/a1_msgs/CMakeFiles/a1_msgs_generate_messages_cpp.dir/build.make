@@ -67,16 +67,16 @@ a1_msgs/CMakeFiles/a1_msgs_generate_messages_cpp: /home/yilangliu/a1_real_ws/dev
 
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootState.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootState.h: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg
-/home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootState.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootState.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootState.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootState.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from a1_msgs/FootState.msg"
 	cd /home/yilangliu/a1_real_ws/src/a1_msgs && /home/yilangliu/a1_real_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg -Ia1_msgs:/home/yilangliu/a1_real_ws/src/a1_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p a1_msgs -o /home/yilangliu/a1_real_ws/devel/include/a1_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootPlanDiscrete.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootPlanDiscrete.h: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg
-/home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootPlanDiscrete.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootPlanDiscrete.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootPlanDiscrete.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootPlanDiscrete.h: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/FootPlanDiscrete.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from a1_msgs/FootPlanDiscrete.msg"
@@ -84,9 +84,9 @@ a1_msgs/CMakeFiles/a1_msgs_generate_messages_cpp: /home/yilangliu/a1_real_ws/dev
 
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/MultiFootPlanDiscrete.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/MultiFootPlanDiscrete.h: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg
-/home/yilangliu/a1_real_ws/devel/include/a1_msgs/MultiFootPlanDiscrete.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yilangliu/a1_real_ws/devel/include/a1_msgs/MultiFootPlanDiscrete.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/MultiFootPlanDiscrete.h: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg
+/home/yilangliu/a1_real_ws/devel/include/a1_msgs/MultiFootPlanDiscrete.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/yilangliu/a1_real_ws/devel/include/a1_msgs/MultiFootPlanDiscrete.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/MultiFootPlanDiscrete.h: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg
 /home/yilangliu/a1_real_ws/devel/include/a1_msgs/MultiFootPlanDiscrete.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from a1_msgs/MultiFootPlanDiscrete.msg"

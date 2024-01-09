@@ -66,24 +66,24 @@ a1_msgs/CMakeFiles/a1_msgs_generate_messages_lisp: /home/yilangliu/a1_real_ws/de
 
 /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/FootState.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/FootState.lisp: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg
-/home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/FootState.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/FootState.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/FootState.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from a1_msgs/FootState.msg"
 	cd /home/yilangliu/a1_real_ws/build/a1_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg -Ia1_msgs:/home/yilangliu/a1_real_ws/src/a1_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p a1_msgs -o /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg
 
 /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/FootPlanDiscrete.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/FootPlanDiscrete.lisp: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg
-/home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/FootPlanDiscrete.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/FootPlanDiscrete.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/FootPlanDiscrete.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/FootPlanDiscrete.lisp: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from a1_msgs/FootPlanDiscrete.msg"
 	cd /home/yilangliu/a1_real_ws/build/a1_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg -Ia1_msgs:/home/yilangliu/a1_real_ws/src/a1_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p a1_msgs -o /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg
 
 /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/MultiFootPlanDiscrete.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/MultiFootPlanDiscrete.lisp: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg
-/home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/MultiFootPlanDiscrete.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/MultiFootPlanDiscrete.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/MultiFootPlanDiscrete.lisp: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg
+/home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/MultiFootPlanDiscrete.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/MultiFootPlanDiscrete.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg/MultiFootPlanDiscrete.lisp: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from a1_msgs/MultiFootPlanDiscrete.msg"
 	cd /home/yilangliu/a1_real_ws/build/a1_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg -Ia1_msgs:/home/yilangliu/a1_real_ws/src/a1_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p a1_msgs -o /home/yilangliu/a1_real_ws/devel/share/common-lisp/ros/a1_msgs/msg

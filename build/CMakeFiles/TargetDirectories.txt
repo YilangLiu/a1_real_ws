@@ -218,6 +218,7 @@
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/install/strip.dir
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/install/local.dir
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/install.dir
+/home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/list_install_components.dir
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/hardware_lcm.dir
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/realsense_a1_lib.dir
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/test_mpc.dir
@@ -225,12 +226,12 @@
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/a1_realsense.dir
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/lcm_server_3_2.dir
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/test_bezier.dir
+/home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/position_lcm.dir
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/dynamic_test.dir
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/a1_gazebo.dir
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/hardware_a1_lib.dir
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/edit_cache.dir
 /home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/rebuild_cache.dir
-/home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/list_install_components.dir
 /home/yilangliu/a1_real_ws/build/unitree_ros/robots/a1_description/CMakeFiles/install/strip.dir
 /home/yilangliu/a1_real_ws/build/unitree_ros/robots/a1_description/CMakeFiles/install/local.dir
 /home/yilangliu/a1_real_ws/build/unitree_ros/robots/a1_description/CMakeFiles/install.dir

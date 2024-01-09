@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/yilangliu/a1_real_ws/devel/include/**",
+        "/home/yilangliu/a1_real_ws/src/apriltag_ros/apriltag_ros/include/**",
+        "/home/yilangliu/a1_real_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/yilangliu/a1_real_ws/src/unitree_ros/unitree_controller/include/**",
+        "/home/yilangliu/a1_real_ws/src/unitree_ros/unitree_legged_control/include/**",
+        "/home/yilangliu/a1_real_ws/src/unitree_legged_real/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

@@ -101,8 +101,8 @@ unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_generate_messages_eus: /home/
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg/LowState.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg/LowState.l: /home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowState.msg
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg/LowState.l: /home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorState.msg
-/home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg/LowState.l: /home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg/LowState.l: /home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/IMU.msg
+/home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg/LowState.l: /home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from unitree_legged_msgs/LowState.msg"
 	cd /home/yilangliu/a1_real_ws/build/unitree_legged_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowState.msg -Iunitree_legged_msgs:/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p unitree_legged_msgs -o /home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg
 
@@ -114,8 +114,8 @@ unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_generate_messages_eus: /home/
 
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg/HighState.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg/HighState.l: /home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/HighState.msg
-/home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg/HighState.l: /home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg/HighState.l: /home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/IMU.msg
+/home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg/HighState.l: /home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating EusLisp code from unitree_legged_msgs/HighState.msg"
 	cd /home/yilangliu/a1_real_ws/build/unitree_legged_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/HighState.msg -Iunitree_legged_msgs:/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p unitree_legged_msgs -o /home/yilangliu/a1_real_ws/devel/share/roseus/ros/unitree_legged_msgs/msg
 

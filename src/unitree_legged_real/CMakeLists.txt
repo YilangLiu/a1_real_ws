@@ -64,11 +64,13 @@ add_library(realsense_a1_lib
         src/exe/A1_dynamics.cpp
         src/exe/A1Params.h
         src/exe/A1_state_estimation.cpp
-        src/exe/A1_state_estimation.h
-        src/exe/Utils.h
-        src/exe/Utils.cpp     
+        src/exe/A1_state_estimation.h   
         src/exe/A1_realsense.cpp
         src/exe/A1_realsense.h
+        src/exe/Utils.h
+        src/exe/Utils.cpp
+        src/exe/Bezier_curve.h
+        src/exe/Bezier_curve.cpp
 )       
 
 add_library(a1_dynamics_lib
@@ -120,9 +122,9 @@ target_link_libraries(test_bezier
         OsqpEigen::OsqpEigen
         )
 
-# add_executable(position_lcm src/exe/position_mode.cpp)
-# target_link_libraries(position_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES})
-# add_dependencies(position_lcm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_executable(position_lcm src/exe/position_mode.cpp)
+target_link_libraries(position_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES})
+add_dependencies(position_lcm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 # add_executable(velocity_lcm src/exe/velocity_mode.cpp)
 # target_link_libraries(velocity_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES})

@@ -44,12 +44,12 @@ add_custom_target(_unitree_legged_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowCmd.msg" NAME_WE)
 add_custom_target(_unitree_legged_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "unitree_legged_msgs" "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowCmd.msg" "unitree_legged_msgs/MotorCmd:unitree_legged_msgs/LED:unitree_legged_msgs/Cartesian"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "unitree_legged_msgs" "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowCmd.msg" "unitree_legged_msgs/MotorCmd:unitree_legged_msgs/Cartesian:unitree_legged_msgs/LED"
 )
 
 get_filename_component(_filename "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowState.msg" NAME_WE)
 add_custom_target(_unitree_legged_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "unitree_legged_msgs" "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowState.msg" "unitree_legged_msgs/Cartesian:unitree_legged_msgs/MotorState:unitree_legged_msgs/IMU"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "unitree_legged_msgs" "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowState.msg" "unitree_legged_msgs/MotorState:unitree_legged_msgs/Cartesian:unitree_legged_msgs/IMU"
 )
 
 get_filename_component(_filename "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/HighCmd.msg" NAME_WE)
@@ -101,13 +101,13 @@ _generate_msg_cpp(unitree_legged_msgs
 _generate_msg_cpp(unitree_legged_msgs
   "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowCmd.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorCmd.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LED.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg"
+  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorCmd.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LED.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/unitree_legged_msgs
 )
 _generate_msg_cpp(unitree_legged_msgs
   "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowState.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorState.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/IMU.msg"
+  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorState.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/IMU.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/unitree_legged_msgs
 )
 _generate_msg_cpp(unitree_legged_msgs
@@ -198,13 +198,13 @@ _generate_msg_eus(unitree_legged_msgs
 _generate_msg_eus(unitree_legged_msgs
   "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowCmd.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorCmd.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LED.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg"
+  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorCmd.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LED.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/unitree_legged_msgs
 )
 _generate_msg_eus(unitree_legged_msgs
   "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowState.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorState.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/IMU.msg"
+  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorState.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/IMU.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/unitree_legged_msgs
 )
 _generate_msg_eus(unitree_legged_msgs
@@ -295,13 +295,13 @@ _generate_msg_lisp(unitree_legged_msgs
 _generate_msg_lisp(unitree_legged_msgs
   "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowCmd.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorCmd.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LED.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg"
+  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorCmd.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LED.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/unitree_legged_msgs
 )
 _generate_msg_lisp(unitree_legged_msgs
   "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowState.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorState.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/IMU.msg"
+  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorState.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/IMU.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/unitree_legged_msgs
 )
 _generate_msg_lisp(unitree_legged_msgs
@@ -392,13 +392,13 @@ _generate_msg_nodejs(unitree_legged_msgs
 _generate_msg_nodejs(unitree_legged_msgs
   "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowCmd.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorCmd.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LED.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg"
+  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorCmd.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LED.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/unitree_legged_msgs
 )
 _generate_msg_nodejs(unitree_legged_msgs
   "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowState.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorState.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/IMU.msg"
+  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorState.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/IMU.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/unitree_legged_msgs
 )
 _generate_msg_nodejs(unitree_legged_msgs
@@ -489,13 +489,13 @@ _generate_msg_py(unitree_legged_msgs
 _generate_msg_py(unitree_legged_msgs
   "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowCmd.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorCmd.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LED.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg"
+  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorCmd.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LED.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/unitree_legged_msgs
 )
 _generate_msg_py(unitree_legged_msgs
   "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/LowState.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorState.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/IMU.msg"
+  "/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/MotorState.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/Cartesian.msg;/home/yilangliu/a1_real_ws/src/unitree_legged_msgs/msg/IMU.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/unitree_legged_msgs
 )
 _generate_msg_py(unitree_legged_msgs

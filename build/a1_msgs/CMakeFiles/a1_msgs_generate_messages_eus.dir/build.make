@@ -67,24 +67,24 @@ a1_msgs/CMakeFiles/a1_msgs_generate_messages_eus: /home/yilangliu/a1_real_ws/dev
 
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/FootState.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/FootState.l: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg
-/home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/FootState.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/FootState.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/FootState.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from a1_msgs/FootState.msg"
 	cd /home/yilangliu/a1_real_ws/build/a1_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg -Ia1_msgs:/home/yilangliu/a1_real_ws/src/a1_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p a1_msgs -o /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg
 
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/FootPlanDiscrete.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/FootPlanDiscrete.l: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg
-/home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/FootPlanDiscrete.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/FootPlanDiscrete.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/FootPlanDiscrete.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/FootPlanDiscrete.l: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from a1_msgs/FootPlanDiscrete.msg"
 	cd /home/yilangliu/a1_real_ws/build/a1_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg -Ia1_msgs:/home/yilangliu/a1_real_ws/src/a1_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p a1_msgs -o /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg
 
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/MultiFootPlanDiscrete.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/MultiFootPlanDiscrete.l: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg
-/home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/MultiFootPlanDiscrete.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/MultiFootPlanDiscrete.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/MultiFootPlanDiscrete.l: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg
+/home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/MultiFootPlanDiscrete.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/MultiFootPlanDiscrete.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg/MultiFootPlanDiscrete.l: /home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from a1_msgs/MultiFootPlanDiscrete.msg"
 	cd /home/yilangliu/a1_real_ws/build/a1_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg -Ia1_msgs:/home/yilangliu/a1_real_ws/src/a1_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p a1_msgs -o /home/yilangliu/a1_real_ws/devel/share/roseus/ros/a1_msgs/msg

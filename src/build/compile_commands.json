@@ -103,14 +103,20 @@
 
 {
   "directory": "/home/yilangliu/a1_real_ws/src/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Drealsense_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_realsense.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_realsense.cpp"
+},
+
+{
+  "directory": "/home/yilangliu/a1_real_ws/src/build",
   "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Drealsense_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp",
   "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp"
 },
 
 {
   "directory": "/home/yilangliu/a1_real_ws/src/build",
-  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Drealsense_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_realsense.cpp",
-  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_realsense.cpp"
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"unitree_legged_real\\\" -DSDK3_2 -Drealsense_a1_lib_EXPORTS -I/usr/include/eigen3 -I/usr/local/include/osqp -I../unitree_legged_real/include -I../unitree_legged_real/../mujoco-2.3.5/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I../unitree_legged_real/../mujoco-2.3.5/include/mujoco -I/home/yilangliu/unitree_legged_sdk/include  -O3 -g -fPIC   -std=c++11 -o unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Bezier_curve.cpp",
+  "file": "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Bezier_curve.cpp"
 },
 
 {

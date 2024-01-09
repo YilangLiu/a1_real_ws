@@ -744,6 +744,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "unitree_legged_real/CMakeFiles/a1_realsense.dir/DependInfo.cmake"
   "unitree_legged_real/CMakeFiles/lcm_server_3_2.dir/DependInfo.cmake"
   "unitree_legged_real/CMakeFiles/test_bezier.dir/DependInfo.cmake"
+  "unitree_legged_real/CMakeFiles/position_lcm.dir/DependInfo.cmake"
   "unitree_legged_real/CMakeFiles/dynamic_test.dir/DependInfo.cmake"
   "unitree_legged_real/CMakeFiles/a1_gazebo.dir/DependInfo.cmake"
   "unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/DependInfo.cmake"

@@ -16,6 +16,11 @@ public:
                                        Eigen::Vector3d end,
                                        double pitch_angle);
 
+    Eigen::Vector3d get_foot_pos_curve_xyz(float t, 
+                                       Eigen::Vector3d start, 
+                                       Eigen::Vector3d end,
+                                       double pitch_angle);
+
     bool reset_foot_pos_curve(){curve_constructed=false;}
 
 private:

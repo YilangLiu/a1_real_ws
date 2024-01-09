@@ -150,7 +150,6 @@ int mainHelper(int argc, char *argv[], TLCM &roslcm)
                 SendLowROS.motorCmd[FR_2].tau = 0.0f;
 
             }
-
         }
 
         SendLowLCM = ToLcm(SendLowROS, SendLowLCM);

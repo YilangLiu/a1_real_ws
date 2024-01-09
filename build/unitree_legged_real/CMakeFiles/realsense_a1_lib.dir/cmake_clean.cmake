@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/realsense_a1_lib.dir/src/exe/A1_dynamics.cpp.o"
   "CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o"
   "CMakeFiles/realsense_a1_lib.dir/src/exe/A1_state_estimation.cpp.o"
+  "CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.o"
   "CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o"
 )
 

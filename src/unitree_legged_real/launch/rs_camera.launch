@@ -21,14 +21,14 @@
         <param name="publish_frequency" type="double" value="1000.0"/>
     </node>
 
-    <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" 
-        output="screen" if="$(arg use_gui)"/>
+    <!-- <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" 
+        output="screen" if="$(arg use_gui)"/> -->
 
     <node pkg="rviz" type="rviz" name="rviz" respawn="false" output="screen"
         args="-d $(find a1_description)/launch/a1_realsense_apriltag.rviz"/>
 
-    <include file="$(find realsense2_camera)/launch/rs_camera.launch" />
-    <include file="$(find apriltag_ros)/launch/continuous_detection.launch" />
+    <!-- <include file="$(find realsense2_camera)/launch/rs_camera.launch" />
+    <include file="$(find apriltag_ros)/launch/continuous_detection.launch" /> -->
     <!-- <node pkg="a1_description" type="marker.py" name="marker_visual" output="screen">
         <param name="data_position" value="$(find a1_description)/scripts/test.txt"/>
      </node> -->

@@ -24,17 +24,17 @@ add_custom_target(_a1_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg" NAME_WE)
 add_custom_target(_a1_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a1_msgs" "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg" "geometry_msgs/Vector3:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a1_msgs" "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg" "std_msgs/Header:geometry_msgs/Vector3"
 )
 
 get_filename_component(_filename "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg" NAME_WE)
 add_custom_target(_a1_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a1_msgs" "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg" "a1_msgs/FootState:geometry_msgs/Vector3:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a1_msgs" "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg" "std_msgs/Header:geometry_msgs/Vector3:a1_msgs/FootState"
 )
 
 get_filename_component(_filename "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg" NAME_WE)
 add_custom_target(_a1_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a1_msgs" "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg" "a1_msgs/FootPlanDiscrete:a1_msgs/FootState:geometry_msgs/Vector3:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a1_msgs" "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg" "std_msgs/Header:geometry_msgs/Vector3:a1_msgs/FootPlanDiscrete:a1_msgs/FootState"
 )
 
 #
@@ -52,19 +52,19 @@ _generate_msg_cpp(a1_msgs
 _generate_msg_cpp(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/a1_msgs
 )
 _generate_msg_cpp(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/a1_msgs
 )
 _generate_msg_cpp(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/a1_msgs
 )
 
@@ -109,19 +109,19 @@ _generate_msg_eus(a1_msgs
 _generate_msg_eus(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/a1_msgs
 )
 _generate_msg_eus(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/a1_msgs
 )
 _generate_msg_eus(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/a1_msgs
 )
 
@@ -166,19 +166,19 @@ _generate_msg_lisp(a1_msgs
 _generate_msg_lisp(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/a1_msgs
 )
 _generate_msg_lisp(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/a1_msgs
 )
 _generate_msg_lisp(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/a1_msgs
 )
 
@@ -223,19 +223,19 @@ _generate_msg_nodejs(a1_msgs
 _generate_msg_nodejs(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/a1_msgs
 )
 _generate_msg_nodejs(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/a1_msgs
 )
 _generate_msg_nodejs(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/a1_msgs
 )
 
@@ -280,19 +280,19 @@ _generate_msg_py(a1_msgs
 _generate_msg_py(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/a1_msgs
 )
 _generate_msg_py(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/a1_msgs
 )
 _generate_msg_py(a1_msgs
   "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/MultiFootPlanDiscrete.msg"
   "${MSG_I_FLAGS}"
-  "/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootPlanDiscrete.msg;/home/yilangliu/a1_real_ws/src/a1_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/a1_msgs
 )
 

@@ -58,84 +58,88 @@ int main(int argc, char **argv) {
     ros::init(argc, argv, "a1_realsense_april");
     ros::NodeHandle nh;
 
-    // std::cout << "WARNING: Control level is set to LOW-level." << std::endl
-    //           << "Make sure the robot is hung up." << std::endl
-    //           << "Press Enter to continue..." << std::endl;
-    // std::cin.ignore();
+    std::cout << "WARNING: Control level is set to LOW-level." << std::endl
+              << "Make sure the robot is hung up." << std::endl
+              << "Press Enter to continue..." << std::endl;
+    std::cin.ignore();
 
     std::unique_ptr<A1_realsense> A1 = make_unique<A1_realsense>(nh);
 
+    std::atomic<bool> control_alive{};
+    control_alive.store(true, std::memory_order_release);
+
+
     std::thread refresh_robot_tag_pos([&](){
-    
+    ros::Time start = ros::Time::now();
+    ros::Time prev = ros::Time::now();
+    ros::Time now = ros::Time::now();  // bool res = app.exec();
+    ros::Duration dt(0);
+    ros::Duration dt_solver_time(0);
     // static tf::TransformBroadcaster br;
     // tf::TransformListener listener;
-    ros::Rate rate(400);
     // visualization_msgs::Marker sphere_marker;
     // ros::Publisher marker_pub = nh.advertise<visualization_msgs::Marker>("visualization_marker", 1);
 
     
     // sphere_marker.type = visualization_msgs::Marker::CUBE;
 
-    while (ros::ok()){
-        // A1->camera_pos_reset();
-        // A1->pos_update();
-        // camera_pos_reset();
-        // //pos_update();
-        // tf::StampedTransform tag2_transform;
-        // tf::StampedTransform quad_transform;
-        // tf::Transform tag2_trans;
-        // tf::Quaternion yaw_quater;
+    while (control_alive.load(std::memory_order_acquire) && ros::ok()){
+        
+        A1->target_pos_update();
 
-        // try{
-        //     listener.lookupTransform("base", "tag_2", ros::Time(0), tag2_transform);
-        //     listener.lookupTransform("base", "tag_link", ros::Time(0),quad_transform);
-        //     tag2_trans.setOrigin(tf::Vector3(tag2_transform.getOrigin().x(),
-        //                                     tag2_transform.getOrigin().y(),
-        //                                     tag2_transform.getOrigin().z()));
-            
-
-        //     // temporarily fix pitch and roll 
-        //     tf::Matrix3x3 m(tag2_transform.getRotation());
-        //     double roll, pitch, yaw;
-        //     m.getRPY(roll, pitch, yaw);
-        //     yaw_quater.setRPY(0,0,yaw);
-        //     // tag2_trans.setRotation(tag2_transform.getRotation());
-        //     tag2_trans.setRotation(yaw_quater);
-            
-        //     sphere_marker.header.stamp = ros::Time::now();
-        //     sphere_marker.ns = "CUBE";
-        //     sphere_marker.action = visualization_msgs::Marker::ADD;
-        //     sphere_marker.header.frame_id = "tag_3";
-        //     sphere_marker.pose.position.x = 0;
-        //     sphere_marker.pose.position.y = 0;
-        //     sphere_marker.pose.position.z = 0;
-        //     sphere_marker.pose.orientation.x = 0.0;
-        //     sphere_marker.pose.orientation.y = 0.0;
-        //     sphere_marker.pose.orientation.z = 0.0;
-        //     sphere_marker.pose.orientation.w = 1.0;
-        //     sphere_marker.color.r = 0.0f;
-        //     sphere_marker.color.g = 1.0f;
-        //     sphere_marker.color.b = 0.0f;
-        //     sphere_marker.color.a = 1.0;
-        //     sphere_marker.scale.x = 0.05;
-        //     sphere_marker.scale.y = 0.05;
-        //     sphere_marker.scale.z = 0.05;
-        //     marker_pub.publish(sphere_marker);
-        // }
-        // catch (tf::TransformException &ex){
-        //     ROS_ERROR("%s",ex.what());
-        //     ros::Duration(1.0).sleep();
-        //     continue;
-        // }
-        // br.sendTransform(tf::StampedTransform(tag2_trans, ros::Time::now(), "base", "trunk"));
-        rate.sleep();
+        now = ros::Time::now();
+        dt = now - prev;
+        // std::cout<<"dt_1: "<<dt.toSec() <<std::endl;
+        prev = now;
+        bool update_running = A1->counting_finished;
+        if(update_running){
+                std::cout << "Thread 1 loop is terminated because of errors." << std::endl;
+                ros::shutdown();
+                std::terminate();
+                break;
+        }
+        dt_solver_time = ros::Time::now() - now;
+        if (dt_solver_time.toSec() < MAIN_UPDATE_FREQUENCY / 1000) {
+                ros::Duration( MAIN_UPDATE_FREQUENCY / 1000 - dt_solver_time.toSec() ).sleep();
+        }
     }
     });
 
+std::thread robot_control([&](){
+    ros::Time start = ros::Time::now();
+    ros::Time prev = ros::Time::now();
+    ros::Time now = ros::Time::now();  // bool res = app.exec();
+    ros::Duration dt(0);
+    ros::Duration dt_solver_time(0);
+    while (control_alive.load(std::memory_order_acquire) && ros::ok()){
+        
+        
+        bool Initialized = A1->Initialized_flag;
+        if (Initialized){
+            A1->start_counting();
+            A1->send_position_cmd();
+        }
+        now = ros::Time::now();
+        dt = now - prev;
+        prev = now;
+        // std::cout<<"dt_2: "<<dt.toSec() <<std::endl;
+        bool control_running = A1->counting_finished;
+        if(control_running){
+                std::cout << "Thread 2 loop is terminated because of errors." << std::endl;
+                ros::shutdown();
+                std::terminate();
+                break;
+        }
+        dt_solver_time = ros::Time::now() - now;
+        if (dt_solver_time.toSec() < GRF_UPDATE_FREQUENCY/1000){
+                ros::Duration(GRF_UPDATE_FREQUENCY /1000 - dt_solver_time.toSec()).sleep();
+        }
+    }
+    });
 
-    
     ros::AsyncSpinner spinner(12);
     spinner.start();
     refresh_robot_tag_pos.join();
+    robot_control.join();
     return 0;   
 }

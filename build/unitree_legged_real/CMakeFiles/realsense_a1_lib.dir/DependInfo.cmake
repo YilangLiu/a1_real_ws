@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_dynamics.cpp" "/home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_dynamics.cpp.o"
   "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_realsense.cpp" "/home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o"
   "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_state_estimation.cpp" "/home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_state_estimation.cpp.o"
+  "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Bezier_curve.cpp" "/home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.o"
   "/home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp" "/home/yilangliu/a1_real_ws/build/unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

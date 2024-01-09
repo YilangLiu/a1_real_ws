@@ -2211,6 +2211,19 @@ test_bezier/fast:
 .PHONY : test_bezier/fast
 
 #=============================================================================
+# Target rules for targets named position_lcm
+
+# Build rule for target.
+position_lcm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 position_lcm
+.PHONY : position_lcm
+
+# fast build rule for target.
+position_lcm/fast:
+	$(MAKE) -f unitree_legged_real/CMakeFiles/position_lcm.dir/build.make unitree_legged_real/CMakeFiles/position_lcm.dir/build
+.PHONY : position_lcm/fast
+
+#=============================================================================
 # Target rules for targets named dynamic_test
 
 # Build rule for target.
@@ -2731,6 +2744,7 @@ help:
 	@echo "... a1_realsense"
 	@echo "... lcm_server_3_2"
 	@echo "... test_bezier"
+	@echo "... position_lcm"
 	@echo "... dynamic_test"
 	@echo "... a1_gazebo"
 	@echo "... hardware_a1_lib"

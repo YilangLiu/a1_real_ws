@@ -83,22 +83,9 @@ unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_state_estimation.
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense_a1_lib.dir/src/exe/A1_state_estimation.cpp.s"
 	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_state_estimation.cpp -o CMakeFiles/realsense_a1_lib.dir/src/exe/A1_state_estimation.cpp.s
 
-unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o: unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/flags.make
-unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o: /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o"
-	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp
-
-unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.i"
-	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp > CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.i
-
-unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.s"
-	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp -o CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.s
-
 unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o: unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/flags.make
 unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o: /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_realsense.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o"
 	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_realsense.cpp
 
 unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.i: cmake_force
@@ -109,23 +96,51 @@ unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.s: 
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.s"
 	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/A1_realsense.cpp -o CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.s
 
+unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o: unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/flags.make
+unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o: /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o"
+	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp
+
+unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.i"
+	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp > CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.i
+
+unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.s"
+	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Utils.cpp -o CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.s
+
+unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.o: unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/flags.make
+unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.o: /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Bezier_curve.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.o"
+	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.o -c /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Bezier_curve.cpp
+
+unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.i"
+	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Bezier_curve.cpp > CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.i
+
+unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.s"
+	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yilangliu/a1_real_ws/src/unitree_legged_real/src/exe/Bezier_curve.cpp -o CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.s
+
 # Object files for target realsense_a1_lib
 realsense_a1_lib_OBJECTS = \
 "CMakeFiles/realsense_a1_lib.dir/src/exe/A1_dynamics.cpp.o" \
 "CMakeFiles/realsense_a1_lib.dir/src/exe/A1_state_estimation.cpp.o" \
+"CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o" \
 "CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o" \
-"CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o"
+"CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.o"
 
 # External object files for target realsense_a1_lib
 realsense_a1_lib_EXTERNAL_OBJECTS =
 
 /home/yilangliu/a1_real_ws/devel/lib/librealsense_a1_lib.so: unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_dynamics.cpp.o
 /home/yilangliu/a1_real_ws/devel/lib/librealsense_a1_lib.so: unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_state_estimation.cpp.o
-/home/yilangliu/a1_real_ws/devel/lib/librealsense_a1_lib.so: unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o
 /home/yilangliu/a1_real_ws/devel/lib/librealsense_a1_lib.so: unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/A1_realsense.cpp.o
+/home/yilangliu/a1_real_ws/devel/lib/librealsense_a1_lib.so: unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.o
+/home/yilangliu/a1_real_ws/devel/lib/librealsense_a1_lib.so: unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.o
 /home/yilangliu/a1_real_ws/devel/lib/librealsense_a1_lib.so: unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/build.make
 /home/yilangliu/a1_real_ws/devel/lib/librealsense_a1_lib.so: unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library /home/yilangliu/a1_real_ws/devel/lib/librealsense_a1_lib.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library /home/yilangliu/a1_real_ws/devel/lib/librealsense_a1_lib.so"
 	cd /home/yilangliu/a1_real_ws/build/unitree_legged_real && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/realsense_a1_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

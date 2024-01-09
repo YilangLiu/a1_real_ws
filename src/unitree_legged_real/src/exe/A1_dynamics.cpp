@@ -176,3 +176,43 @@ in3[5], double jacobian[9])
     jacobian[7] = t5 * t22;
     jacobian[8] = -t2 * t22;
 }
+
+Eigen::Vector3d A1_dynamics::foot_position_to_joint_angle(const Eigen::Vector3d foot_position, double l_hip_sign){
+    double l_up = 0.2;
+    double l_low = 0.2;
+    double l_hip = 0.08505 * l_hip_sign;
+    double x = foot_position[0];
+    double y = foot_position[1];
+    double z = foot_position[2];
+
+    double theta_knee = -std::acos(
+        (x * x + y * y + z * z - l_hip * l_hip - l_low * l_low - l_up * l_up) /
+        (2 * l_low * l_up));
+
+    double l = std::sqrt(l_up * l_up + l_low * l_low + 2 * l_up * l_low * std::cos(theta_knee));
+    double theta_hip = std::asin(-x / l) - theta_knee / 2;
+
+    double c1 = l_hip * y - l * std::cos(theta_hip + theta_knee / 2) * z;
+    double s1 = l * std::cos(theta_hip + theta_knee / 2) * y + l_hip * z;
+
+    double theta_ab = std::atan2(s1, c1);
+
+    return Eigen::Vector3d(theta_ab, theta_hip, theta_knee);
+    
+}
+
+Eigen::Vector3d A1_dynamics::get_joint_angle_FL(const Eigen::Vector3d foot_position){
+    angle_FL = foot_position_to_joint_angle(foot_position - hip_offset_FL, 1);
+    // angle_FR = foot_position_to_joint_angle(foot_position - hip_offset_FR, 1);
+    // angle_RL = foot_position_to_joint_angle(foot_position - hip_offset_RL, 0);
+    // angle_RR = foot_position_to_joint_angle(foot_position - hip_offset_RR, 1);
+    return angle_FL;
+}
+
+Eigen::Vector3d A1_dynamics::get_joint_angle_FR(const Eigen::Vector3d foot_position){
+    // angle_FL = foot_position_to_joint_angle(foot_position - hip_offset_FL, 0);
+    angle_FR = foot_position_to_joint_angle(foot_position - hip_offset_FR, 1);
+    // angle_RL = foot_position_to_joint_angle(foot_position - hip_offset_RL, 0);
+    // angle_RR = foot_position_to_joint_angle(foot_position - hip_offset_RR, 1);
+    return angle_FR;
+}

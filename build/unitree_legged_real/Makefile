@@ -92,6 +92,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -113,16 +123,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -260,6 +260,21 @@ test_bezier: unitree_legged_real/CMakeFiles/test_bezier.dir/rule
 test_bezier/fast:
 	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/test_bezier.dir/build.make unitree_legged_real/CMakeFiles/test_bezier.dir/build
 .PHONY : test_bezier/fast
+
+# Convenience name for target.
+unitree_legged_real/CMakeFiles/position_lcm.dir/rule:
+	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f CMakeFiles/Makefile2 unitree_legged_real/CMakeFiles/position_lcm.dir/rule
+.PHONY : unitree_legged_real/CMakeFiles/position_lcm.dir/rule
+
+# Convenience name for target.
+position_lcm: unitree_legged_real/CMakeFiles/position_lcm.dir/rule
+
+.PHONY : position_lcm
+
+# fast build rule for target.
+position_lcm/fast:
+	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/position_lcm.dir/build.make unitree_legged_real/CMakeFiles/position_lcm.dir/build
+.PHONY : position_lcm/fast
 
 # Convenience name for target.
 unitree_legged_real/CMakeFiles/dynamic_test.dir/rule:
@@ -561,6 +576,7 @@ src/exe/Bezier_curve.o: src/exe/Bezier_curve.cpp.o
 
 # target to build an object file
 src/exe/Bezier_curve.cpp.o:
+	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/build.make unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.o
 	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/build.make unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/src/exe/Bezier_curve.cpp.o
 .PHONY : src/exe/Bezier_curve.cpp.o
 
@@ -570,6 +586,7 @@ src/exe/Bezier_curve.i: src/exe/Bezier_curve.cpp.i
 
 # target to preprocess a source file
 src/exe/Bezier_curve.cpp.i:
+	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/build.make unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.i
 	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/build.make unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/src/exe/Bezier_curve.cpp.i
 .PHONY : src/exe/Bezier_curve.cpp.i
 
@@ -579,6 +596,7 @@ src/exe/Bezier_curve.s: src/exe/Bezier_curve.cpp.s
 
 # target to generate assembly for a file
 src/exe/Bezier_curve.cpp.s:
+	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/build.make unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Bezier_curve.cpp.s
 	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/build.make unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/src/exe/Bezier_curve.cpp.s
 .PHONY : src/exe/Bezier_curve.cpp.s
 
@@ -665,6 +683,33 @@ src/exe/Utils.cpp.s:
 	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/build.make unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/src/exe/Utils.cpp.s
 	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/build.make unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/src/exe/Utils.cpp.s
 .PHONY : src/exe/Utils.cpp.s
+
+src/exe/position_mode.o: src/exe/position_mode.cpp.o
+
+.PHONY : src/exe/position_mode.o
+
+# target to build an object file
+src/exe/position_mode.cpp.o:
+	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/position_lcm.dir/build.make unitree_legged_real/CMakeFiles/position_lcm.dir/src/exe/position_mode.cpp.o
+.PHONY : src/exe/position_mode.cpp.o
+
+src/exe/position_mode.i: src/exe/position_mode.cpp.i
+
+.PHONY : src/exe/position_mode.i
+
+# target to preprocess a source file
+src/exe/position_mode.cpp.i:
+	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/position_lcm.dir/build.make unitree_legged_real/CMakeFiles/position_lcm.dir/src/exe/position_mode.cpp.i
+.PHONY : src/exe/position_mode.cpp.i
+
+src/exe/position_mode.s: src/exe/position_mode.cpp.s
+
+.PHONY : src/exe/position_mode.s
+
+# target to generate assembly for a file
+src/exe/position_mode.cpp.s:
+	cd /home/yilangliu/a1_real_ws/build && $(MAKE) -f unitree_legged_real/CMakeFiles/position_lcm.dir/build.make unitree_legged_real/CMakeFiles/position_lcm.dir/src/exe/position_mode.cpp.s
+.PHONY : src/exe/position_mode.cpp.s
 
 src/exe/robot_gazebo.o: src/exe/robot_gazebo.cpp.o
 
@@ -783,6 +828,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... hardware_lcm"
 	@echo "... realsense_a1_lib"
 	@echo "... test_mpc"
@@ -790,12 +836,12 @@ help:
 	@echo "... a1_realsense"
 	@echo "... lcm_server_3_2"
 	@echo "... test_bezier"
+	@echo "... position_lcm"
 	@echo "... dynamic_test"
 	@echo "... a1_gazebo"
 	@echo "... hardware_a1_lib"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... list_install_components"
 	@echo "... home/yilangliu/unitree_legged_sdk/examples/lcm_server.o"
 	@echo "... home/yilangliu/unitree_legged_sdk/examples/lcm_server.i"
 	@echo "... home/yilangliu/unitree_legged_sdk/examples/lcm_server.s"
@@ -835,6 +881,9 @@ help:
 	@echo "... src/exe/Utils.o"
 	@echo "... src/exe/Utils.i"
 	@echo "... src/exe/Utils.s"
+	@echo "... src/exe/position_mode.o"
+	@echo "... src/exe/position_mode.i"
+	@echo "... src/exe/position_mode.s"
 	@echo "... src/exe/robot_gazebo.o"
 	@echo "... src/exe/robot_gazebo.i"
 	@echo "... src/exe/robot_gazebo.s"

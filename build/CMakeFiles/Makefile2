@@ -320,6 +320,7 @@ unitree_legged_real/all: unitree_legged_real/CMakeFiles/a1_dynamics_lib.dir/all
 unitree_legged_real/all: unitree_legged_real/CMakeFiles/a1_realsense.dir/all
 unitree_legged_real/all: unitree_legged_real/CMakeFiles/lcm_server_3_2.dir/all
 unitree_legged_real/all: unitree_legged_real/CMakeFiles/test_bezier.dir/all
+unitree_legged_real/all: unitree_legged_real/CMakeFiles/position_lcm.dir/all
 unitree_legged_real/all: unitree_legged_real/CMakeFiles/dynamic_test.dir/all
 unitree_legged_real/all: unitree_legged_real/CMakeFiles/a1_gazebo.dir/all
 unitree_legged_real/all: unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/all
@@ -339,6 +340,7 @@ unitree_legged_real/clean: unitree_legged_real/CMakeFiles/a1_dynamics_lib.dir/cl
 unitree_legged_real/clean: unitree_legged_real/CMakeFiles/a1_realsense.dir/clean
 unitree_legged_real/clean: unitree_legged_real/CMakeFiles/lcm_server_3_2.dir/clean
 unitree_legged_real/clean: unitree_legged_real/CMakeFiles/test_bezier.dir/clean
+unitree_legged_real/clean: unitree_legged_real/CMakeFiles/position_lcm.dir/clean
 unitree_legged_real/clean: unitree_legged_real/CMakeFiles/dynamic_test.dir/clean
 unitree_legged_real/clean: unitree_legged_real/CMakeFiles/a1_gazebo.dir/clean
 unitree_legged_real/clean: unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/clean
@@ -1956,12 +1958,12 @@ a1_msgs/CMakeFiles/a1_msgs_generate_messages_lisp.dir/all: a1_msgs/CMakeFiles/_a
 a1_msgs/CMakeFiles/a1_msgs_generate_messages_lisp.dir/all: a1_msgs/CMakeFiles/_a1_msgs_generate_messages_check_deps_MultiFootPlanDiscrete.dir/all
 	$(MAKE) -f a1_msgs/CMakeFiles/a1_msgs_generate_messages_lisp.dir/build.make a1_msgs/CMakeFiles/a1_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f a1_msgs/CMakeFiles/a1_msgs_generate_messages_lisp.dir/build.make a1_msgs/CMakeFiles/a1_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=8,9,10 "Built target a1_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=8,9 "Built target a1_msgs_generate_messages_lisp"
 .PHONY : a1_msgs/CMakeFiles/a1_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 a1_msgs/CMakeFiles/a1_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 a1_msgs/CMakeFiles/a1_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : a1_msgs/CMakeFiles/a1_msgs_generate_messages_lisp.dir/rule
@@ -2019,7 +2021,7 @@ a1_msgs/CMakeFiles/a1_msgs_genlisp.dir/all: a1_msgs/CMakeFiles/a1_msgs_generate_
 
 # Build rule for subdir invocation for target.
 a1_msgs/CMakeFiles/a1_msgs_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 a1_msgs/CMakeFiles/a1_msgs_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : a1_msgs/CMakeFiles/a1_msgs_genlisp.dir/rule
@@ -2248,12 +2250,12 @@ a1_msgs/CMakeFiles/a1_msgs_generate_messages_nodejs.dir/all: a1_msgs/CMakeFiles/
 a1_msgs/CMakeFiles/a1_msgs_generate_messages_nodejs.dir/all: a1_msgs/CMakeFiles/_a1_msgs_generate_messages_check_deps_MultiFootPlanDiscrete.dir/all
 	$(MAKE) -f a1_msgs/CMakeFiles/a1_msgs_generate_messages_nodejs.dir/build.make a1_msgs/CMakeFiles/a1_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f a1_msgs/CMakeFiles/a1_msgs_generate_messages_nodejs.dir/build.make a1_msgs/CMakeFiles/a1_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=11,12 "Built target a1_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=10,11,12 "Built target a1_msgs_generate_messages_nodejs"
 .PHONY : a1_msgs/CMakeFiles/a1_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 a1_msgs/CMakeFiles/a1_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 a1_msgs/CMakeFiles/a1_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : a1_msgs/CMakeFiles/a1_msgs_generate_messages_nodejs.dir/rule
@@ -2313,7 +2315,7 @@ a1_msgs/CMakeFiles/a1_msgs_gennodejs.dir/all: a1_msgs/CMakeFiles/a1_msgs_generat
 
 # Build rule for subdir invocation for target.
 a1_msgs/CMakeFiles/a1_msgs_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 a1_msgs/CMakeFiles/a1_msgs_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : a1_msgs/CMakeFiles/a1_msgs_gennodejs.dir/rule
@@ -2341,7 +2343,7 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_client_node.dir/a
 
 # Build rule for subdir invocation for target.
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_client_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_client_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_client_node.dir/rule
@@ -2399,7 +2401,7 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages.dir/all: apr
 
 # Build rule for subdir invocation for target.
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages.dir/rule
@@ -2755,7 +2757,7 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/all: apriltag_ros/a
 
 # Build rule for subdir invocation for target.
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/rule
@@ -2779,7 +2781,7 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_node.dir/all: april
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_node.dir/all: apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_common.dir/all
 	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_node.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_node.dir/depend
 	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_node.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=19,20 "Built target apriltag_ros_continuous_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=19 "Built target apriltag_ros_continuous_node"
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2838,12 +2840,12 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_eus.dir/all:
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_eus.dir/all: apriltag_ros/apriltag_ros/CMakeFiles/_apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage.dir/all
 	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_eus.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_eus.dir/depend
 	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_eus.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=22,23,24 "Built target apriltag_ros_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=22,23 "Built target apriltag_ros_generate_messages_eus"
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_eus.dir/rule
@@ -2870,7 +2872,7 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_geneus.dir/all: apriltag_ros/a
 
 # Build rule for subdir invocation for target.
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_geneus.dir/rule
@@ -2894,7 +2896,7 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_server_node.dir/a
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_server_node.dir/all: apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_detector.dir/all
 	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_server_node.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_server_node.dir/depend
 	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_server_node.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_server_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=33,34 "Built target apriltag_ros_single_image_server_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=33 "Built target apriltag_ros_single_image_server_node"
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_server_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2926,12 +2928,12 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_lisp.dir/all
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_lisp.dir/all: apriltag_ros/apriltag_ros/CMakeFiles/_apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage.dir/all
 	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_lisp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_lisp.dir/depend
 	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_lisp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=25 "Built target apriltag_ros_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=24,25 "Built target apriltag_ros_generate_messages_lisp"
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_lisp.dir/rule
@@ -2958,12 +2960,12 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_cpp.dir/all:
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_cpp.dir/all: apriltag_ros/apriltag_ros/CMakeFiles/_apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage.dir/all
 	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_cpp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_cpp.dir/depend
 	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_cpp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=21 "Built target apriltag_ros_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=20,21 "Built target apriltag_ros_generate_messages_cpp"
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_cpp.dir/rule
@@ -2990,7 +2992,7 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_detector.dir/all: a
 
 # Build rule for subdir invocation for target.
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_detector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_detector.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_detector.dir/rule
@@ -3044,7 +3046,7 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_genlisp.dir/all: apriltag_ros/
 
 # Build rule for subdir invocation for target.
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_genlisp.dir/rule
@@ -3130,7 +3132,7 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_common.dir/all: apriltag_ros/a
 
 # Build rule for subdir invocation for target.
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_common.dir/rule
@@ -3157,7 +3159,7 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_detector.dir/all:
 
 # Build rule for subdir invocation for target.
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_detector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_detector.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_detector.dir/rule
@@ -3211,12 +3213,12 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_l
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/all
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/depend
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=51,52 "Built target realsense2_camera_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=51,52,53 "Built target realsense2_camera_generate_messages_lisp"
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_lisp.dir/rule
@@ -3243,7 +3245,7 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genlisp.dir/all: re
 
 # Build rule for subdir invocation for target.
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genlisp.dir/rule
@@ -3324,12 +3326,12 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_n
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/all: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/all
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/depend
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=53,54,55 "Built target realsense2_camera_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=54,55 "Built target realsense2_camera_generate_messages_nodejs"
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_nodejs.dir/rule
@@ -3599,7 +3601,7 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_gennodejs.dir/all: 
 
 # Build rule for subdir invocation for target.
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_gennodejs.dir/rule
@@ -3725,12 +3727,12 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_generate_messages_cpp.dir/all
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/depend
 	$(MAKE) -f realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/build.make realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=43,44,45 "Built target realsense2_camera"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=44,45 "Built target realsense2_camera"
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all
 
 # Build rule for subdir invocation for target.
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/rule
@@ -4883,12 +4885,12 @@ unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_generate_messages_cpp.dir/cle
 unitree_ros/unitree_legged_control/CMakeFiles/unitree_legged_control.dir/all: unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_gencpp.dir/all
 	$(MAKE) -f unitree_ros/unitree_legged_control/CMakeFiles/unitree_legged_control.dir/build.make unitree_ros/unitree_legged_control/CMakeFiles/unitree_legged_control.dir/depend
 	$(MAKE) -f unitree_ros/unitree_legged_control/CMakeFiles/unitree_legged_control.dir/build.make unitree_ros/unitree_legged_control/CMakeFiles/unitree_legged_control.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=69,70 "Built target unitree_legged_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=70 "Built target unitree_legged_control"
 .PHONY : unitree_ros/unitree_legged_control/CMakeFiles/unitree_legged_control.dir/all
 
 # Build rule for subdir invocation for target.
 unitree_ros/unitree_legged_control/CMakeFiles/unitree_legged_control.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 unitree_ros/unitree_legged_control/CMakeFiles/unitree_legged_control.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : unitree_ros/unitree_legged_control/CMakeFiles/unitree_legged_control.dir/rule
@@ -4961,12 +4963,12 @@ unitree_legged_real/CMakeFiles/hardware_lcm.dir/all: unitree_legged_real/CMakeFi
 unitree_legged_real/CMakeFiles/hardware_lcm.dir/all: unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/all
 	$(MAKE) -f unitree_legged_real/CMakeFiles/hardware_lcm.dir/build.make unitree_legged_real/CMakeFiles/hardware_lcm.dir/depend
 	$(MAKE) -f unitree_legged_real/CMakeFiles/hardware_lcm.dir/build.make unitree_legged_real/CMakeFiles/hardware_lcm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=41 "Built target hardware_lcm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=40,41 "Built target hardware_lcm"
 .PHONY : unitree_legged_real/CMakeFiles/hardware_lcm.dir/all
 
 # Build rule for subdir invocation for target.
 unitree_legged_real/CMakeFiles/hardware_lcm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 35
 	$(MAKE) -f CMakeFiles/Makefile2 unitree_legged_real/CMakeFiles/hardware_lcm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : unitree_legged_real/CMakeFiles/hardware_lcm.dir/rule
@@ -4988,12 +4990,12 @@ unitree_legged_real/CMakeFiles/hardware_lcm.dir/clean:
 unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/all:
 	$(MAKE) -f unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/build.make unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/depend
 	$(MAKE) -f unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/build.make unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=59,60,61 "Built target realsense_a1_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=59,60,61,62 "Built target realsense_a1_lib"
 .PHONY : unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/all
 
 # Build rule for subdir invocation for target.
 unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/rule
@@ -5015,12 +5017,12 @@ unitree_legged_real/CMakeFiles/realsense_a1_lib.dir/clean:
 unitree_legged_real/CMakeFiles/test_mpc.dir/all: unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/all
 	$(MAKE) -f unitree_legged_real/CMakeFiles/test_mpc.dir/build.make unitree_legged_real/CMakeFiles/test_mpc.dir/depend
 	$(MAKE) -f unitree_legged_real/CMakeFiles/test_mpc.dir/build.make unitree_legged_real/CMakeFiles/test_mpc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=63,64 "Built target test_mpc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=64 "Built target test_mpc"
 .PHONY : unitree_legged_real/CMakeFiles/test_mpc.dir/all
 
 # Build rule for subdir invocation for target.
 unitree_legged_real/CMakeFiles/test_mpc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 unitree_legged_real/CMakeFiles/test_mpc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : unitree_legged_real/CMakeFiles/test_mpc.dir/rule
@@ -5075,7 +5077,7 @@ unitree_legged_real/CMakeFiles/a1_realsense.dir/all: unitree_legged_real/CMakeFi
 
 # Build rule for subdir invocation for target.
 unitree_legged_real/CMakeFiles/a1_realsense.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 unitree_legged_real/CMakeFiles/a1_realsense.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : unitree_legged_real/CMakeFiles/a1_realsense.dir/rule
@@ -5173,7 +5175,7 @@ unitree_legged_real/CMakeFiles/lcm_server_3_2.dir/clean:
 unitree_legged_real/CMakeFiles/test_bezier.dir/all: unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/all
 	$(MAKE) -f unitree_legged_real/CMakeFiles/test_bezier.dir/build.make unitree_legged_real/CMakeFiles/test_bezier.dir/depend
 	$(MAKE) -f unitree_legged_real/CMakeFiles/test_bezier.dir/build.make unitree_legged_real/CMakeFiles/test_bezier.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=62 "Built target test_bezier"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=63 "Built target test_bezier"
 .PHONY : unitree_legged_real/CMakeFiles/test_bezier.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5194,13 +5196,89 @@ unitree_legged_real/CMakeFiles/test_bezier.dir/clean:
 .PHONY : unitree_legged_real/CMakeFiles/test_bezier.dir/clean
 
 #=============================================================================
+# Target rules for target unitree_legged_real/CMakeFiles/position_lcm.dir
+
+# All Build rule for target.
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/actionlib_generate_messages_py.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/actionlib_generate_messages_eus.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/tf_generate_messages_lisp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/tf_generate_messages_eus.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/tf_generate_messages_cpp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/tf_generate_messages_py.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/roscpp_generate_messages_py.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/roscpp_generate_messages_eus.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/std_msgs_generate_messages_py.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/tf_generate_messages_nodejs.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_ros/robots/aliengo_description/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_generate_messages_py.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_generate_messages_nodejs.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_generate_messages_lisp.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_generate_messages_eus.dir/all
+unitree_legged_real/CMakeFiles/position_lcm.dir/all: unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f unitree_legged_real/CMakeFiles/position_lcm.dir/build.make unitree_legged_real/CMakeFiles/position_lcm.dir/depend
+	$(MAKE) -f unitree_legged_real/CMakeFiles/position_lcm.dir/build.make unitree_legged_real/CMakeFiles/position_lcm.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=43 "Built target position_lcm"
+.PHONY : unitree_legged_real/CMakeFiles/position_lcm.dir/all
+
+# Build rule for subdir invocation for target.
+unitree_legged_real/CMakeFiles/position_lcm.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 28
+	$(MAKE) -f CMakeFiles/Makefile2 unitree_legged_real/CMakeFiles/position_lcm.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
+.PHONY : unitree_legged_real/CMakeFiles/position_lcm.dir/rule
+
+# Convenience name for target.
+position_lcm: unitree_legged_real/CMakeFiles/position_lcm.dir/rule
+
+.PHONY : position_lcm
+
+# clean rule for target.
+unitree_legged_real/CMakeFiles/position_lcm.dir/clean:
+	$(MAKE) -f unitree_legged_real/CMakeFiles/position_lcm.dir/build.make unitree_legged_real/CMakeFiles/position_lcm.dir/clean
+.PHONY : unitree_legged_real/CMakeFiles/position_lcm.dir/clean
+
+#=============================================================================
 # Target rules for target unitree_legged_real/CMakeFiles/dynamic_test.dir
 
 # All Build rule for target.
 unitree_legged_real/CMakeFiles/dynamic_test.dir/all: unitree_legged_real/CMakeFiles/a1_dynamics_lib.dir/all
 	$(MAKE) -f unitree_legged_real/CMakeFiles/dynamic_test.dir/build.make unitree_legged_real/CMakeFiles/dynamic_test.dir/depend
 	$(MAKE) -f unitree_legged_real/CMakeFiles/dynamic_test.dir/build.make unitree_legged_real/CMakeFiles/dynamic_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=35 "Built target dynamic_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=34 "Built target dynamic_test"
 .PHONY : unitree_legged_real/CMakeFiles/dynamic_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5255,7 +5333,7 @@ unitree_legged_real/CMakeFiles/a1_gazebo.dir/clean:
 unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/all:
 	$(MAKE) -f unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/build.make unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/depend
 	$(MAKE) -f unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/build.make unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=36,37,38,39,40 "Built target hardware_a1_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=35,36,37,38,39 "Built target hardware_a1_lib"
 .PHONY : unitree_legged_real/CMakeFiles/hardware_a1_lib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5309,7 +5387,7 @@ unitree_ros/unitree_controller/CMakeFiles/unitree_move_kinetic.dir/clean:
 unitree_ros/unitree_controller/CMakeFiles/unitree_controller.dir/all: unitree_legged_msgs/CMakeFiles/unitree_legged_msgs_gencpp.dir/all
 	$(MAKE) -f unitree_ros/unitree_controller/CMakeFiles/unitree_controller.dir/build.make unitree_ros/unitree_controller/CMakeFiles/unitree_controller.dir/depend
 	$(MAKE) -f unitree_ros/unitree_controller/CMakeFiles/unitree_controller.dir/build.make unitree_ros/unitree_controller/CMakeFiles/unitree_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=67 "Built target unitree_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=68 "Built target unitree_controller"
 .PHONY : unitree_ros/unitree_controller/CMakeFiles/unitree_controller.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5633,7 +5711,7 @@ unitree_ros/unitree_controller/CMakeFiles/controller_manager_msgs_generate_messa
 unitree_ros/unitree_controller/CMakeFiles/unitree_external_force.dir/all:
 	$(MAKE) -f unitree_ros/unitree_controller/CMakeFiles/unitree_external_force.dir/build.make unitree_ros/unitree_controller/CMakeFiles/unitree_external_force.dir/depend
 	$(MAKE) -f unitree_ros/unitree_controller/CMakeFiles/unitree_external_force.dir/build.make unitree_ros/unitree_controller/CMakeFiles/unitree_external_force.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=68 "Built target unitree_external_force"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=69 "Built target unitree_external_force"
 .PHONY : unitree_ros/unitree_controller/CMakeFiles/unitree_external_force.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5849,12 +5927,12 @@ unitree_ros/unitree_gazebo/CMakeFiles/unitreeDrawForcePlugin.dir/clean:
 unitree_ros/unitree_gazebo/CMakeFiles/unitreeFootContactPlugin.dir/all:
 	$(MAKE) -f unitree_ros/unitree_gazebo/CMakeFiles/unitreeFootContactPlugin.dir/build.make unitree_ros/unitree_gazebo/CMakeFiles/unitreeFootContactPlugin.dir/depend
 	$(MAKE) -f unitree_ros/unitree_gazebo/CMakeFiles/unitreeFootContactPlugin.dir/build.make unitree_ros/unitree_gazebo/CMakeFiles/unitreeFootContactPlugin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=66 "Built target unitreeFootContactPlugin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yilangliu/a1_real_ws/build/CMakeFiles --progress-num=66,67 "Built target unitreeFootContactPlugin"
 .PHONY : unitree_ros/unitree_gazebo/CMakeFiles/unitreeFootContactPlugin.dir/all
 
 # Build rule for subdir invocation for target.
 unitree_ros/unitree_gazebo/CMakeFiles/unitreeFootContactPlugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 unitree_ros/unitree_gazebo/CMakeFiles/unitreeFootContactPlugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yilangliu/a1_real_ws/build/CMakeFiles 0
 .PHONY : unitree_ros/unitree_gazebo/CMakeFiles/unitreeFootContactPlugin.dir/rule

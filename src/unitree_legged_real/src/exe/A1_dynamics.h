@@ -18,6 +18,10 @@ class A1_dynamics{
     Eigen::Matrix3d analytical_leg_jacobian(Eigen::Vector3d q, int leg_id);
     Eigen::Vector3d fk(Eigen::Vector3d q, Eigen::VectorXd rho_opt, Eigen::VectorXd rho_fix);
     Eigen::Matrix3d jac(Eigen::Vector3d q, Eigen::VectorXd rho_opt, Eigen::VectorXd rho_fix);
+    Eigen::Vector3d foot_position_to_joint_angle(const Eigen::Vector3d foot_position, double l_hip_sign);
+    Eigen::Vector3d get_joint_angle_FL(const Eigen::Vector3d foot_position);
+    Eigen::Vector3d get_joint_angle_FR(const Eigen::Vector3d foot_position);
+
     void autoFunc_fk_derive(const double in1[3], const double in2[3], const double in3[5], double p_bf[3]);
     void autoFunc_d_fk_dq(const double in1[3], const double in2[3], const double in3[5], double jacobian[9]);
 
@@ -25,6 +29,7 @@ class A1_dynamics{
     double l_low = 0.2;
     double leg_distance, eff_swing, off_x_hip, off_z_hip, off_y_hip;
     Eigen::Vector3d res_FL, res_FR, res_RL, res_RR;
+    Eigen::Vector3d angle_FL, angle_FR, angle_RL, angle_RR; 
     Eigen::Vector3d hip_offset_FL, hip_offset_FR, hip_offset_RL,hip_offset_RR;
     Eigen::Vector3d offset_x_y_z;
     std::vector<Eigen::Vector3d> foot_position_rel;
